@@ -20,7 +20,7 @@ export class SwitchComponent {
     { id: 6, name: 'EmployeeF', role: 'Analyst' },
     { id: 7, name: 'EmployeeG', role: 'Developer' },
     { id: 8, name: 'EmployeeH', role: 'Analyst' },
-    { id: 8, name: 'EmployeeI', role: 'HR' },
+    { id: 9, name: 'EmployeeI', role: 'HR' },
   ]);
 }
 

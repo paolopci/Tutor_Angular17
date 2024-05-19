@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
 import { SwitchComponent } from './switch/switch.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SwitchComponent
+    SwitchComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
