@@ -8,6 +8,7 @@ import { SwitchComponent } from './switch/switch.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { DarkModeComponent } from './Cap03/dark-mode/dark-mode.component';
 import { Style13Component } from './Cap03/style13/style13.component';
+import { Style14Component } from './Cap03/style14/style14.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { Style13Component } from './Cap03/style13/style13.component';
     SwitchComponent,
     CarouselComponent,
     DarkModeComponent,
-    Style13Component
+    Style13Component,
+    Style14Component
   ],
   imports: [
     BrowserModule,
