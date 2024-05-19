@@ -7,13 +7,15 @@ import {FormsModule} from "@angular/forms";
 import { SwitchComponent } from './switch/switch.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { DarkModeComponent } from './Cap03/dark-mode/dark-mode.component';
+import { Style13Component } from './Cap03/style13/style13.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SwitchComponent,
     CarouselComponent,
-    DarkModeComponent
+    DarkModeComponent,
+    Style13Component
   ],
   imports: [
     BrowserModule,

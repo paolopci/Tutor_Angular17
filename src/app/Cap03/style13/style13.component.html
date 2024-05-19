@@ -1,0 +1,10 @@
+<div style="text-align: center;">
+    <p [ngStyle]="{' color' : colorVal, 'font-size' : fontSize, 'font-style' : isItalic }">Example of [ngStyle]
+        directive</p>
+</div>
+<div style="text-align: center;">
+    <p [ngStyle]="applyVal">Example of [ngStyle] directive with object</p>
+</div>
+<div style="text-align: center;">
+    <p [ngStyle]="{'color':setColor()}">Example of [ngStyle] directive function</p>
+</div>
