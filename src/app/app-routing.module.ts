@@ -5,6 +5,7 @@ import { SwitchComponent } from './switch/switch.component';
 import { DarkModeComponent } from './Cap03/dark-mode/dark-mode.component';
 import { Style13Component } from './Cap03/style13/style13.component';
 import { Style14Component } from './Cap03/style14/style14.component';
+import { Container15Component } from './Cap03/container15/container15.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'dark', component: DarkModeComponent },
   { path: 'style', component: Style13Component },
   { path: 'style2', component: Style14Component },
+  { path: 'container', component: Container15Component },
 ];
 
 @NgModule({
