@@ -11,6 +11,7 @@ import { Style13Component } from './Cap03/style13/style13.component';
 import { Style14Component } from './Cap03/style14/style14.component';
 import { Container15Component } from './Cap03/container15/container15.component';
 import { Template16Component } from './Cap03/template16/template16.component';
+import { Template18Component } from './Cap03/template18/template18.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { Template16Component } from './Cap03/template16/template16.component';
     Style13Component,
     Style14Component,
     Container15Component,
-    Template16Component
+    Template16Component,
+    Template18Component
   ],
   imports: [
     BrowserModule,
