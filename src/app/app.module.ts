@@ -12,6 +12,7 @@ import { Style14Component } from './Cap03/style14/style14.component';
 import { Container15Component } from './Cap03/container15/container15.component';
 import { Template16Component } from './Cap03/template16/template16.component';
 import { Template18Component } from './Cap03/template18/template18.component';
+import { TemplateOutlet19Component } from './Cap03/template-outlet19/template-outlet19.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { Template18Component } from './Cap03/template18/template18.component';
     Style14Component,
     Container15Component,
     Template16Component,
-    Template18Component
+    Template18Component,
+    TemplateOutlet19Component
   ],
   imports: [
     BrowserModule,

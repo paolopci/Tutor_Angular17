@@ -8,6 +8,7 @@ import { Style14Component } from './Cap03/style14/style14.component';
 import { Container15Component } from './Cap03/container15/container15.component';
 import { Template16Component } from './Cap03/template16/template16.component';
 import { Template18Component } from './Cap03/template18/template18.component';
+import { TemplateOutlet19Component } from './Cap03/template-outlet19/template-outlet19.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'container', component: Container15Component },
   { path: 'template', component: Template16Component },
   { path: 'template2', component: Template18Component },
+  { path: 'outlet', component: TemplateOutlet19Component },
 ];
 
 @NgModule({
