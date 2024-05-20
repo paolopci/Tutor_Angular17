@@ -11,6 +11,7 @@ import { Template18Component } from './Cap03/template18/template18.component';
 import { TemplateOutlet19Component } from './Cap03/template-outlet19/template-outlet19.component';
 import { Portfolio21Component } from './Cap03/portfolio21/portfolio21.component';
 import { IntroComponent } from './Cap04/intro/intro.component';
+import { OnchangeComponent } from './Cap04/onchange/onchange.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'outlet', component: TemplateOutlet19Component },
   { path: 'portfolio', component: Portfolio21Component },
   { path: 'intro', component: IntroComponent },
+  { path: 'change', component: OnchangeComponent },
 ];
 
 @NgModule({
