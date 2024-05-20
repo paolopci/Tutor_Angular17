@@ -14,6 +14,7 @@ import { Template16Component } from './Cap03/template16/template16.component';
 import { Template18Component } from './Cap03/template18/template18.component';
 import { TemplateOutlet19Component } from './Cap03/template-outlet19/template-outlet19.component';
 import { Portfolio21Component } from './Cap03/portfolio21/portfolio21.component';
+import { IntroComponent } from './Cap04/intro/intro.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { Portfolio21Component } from './Cap03/portfolio21/portfolio21.component'
     Template16Component,
     Template18Component,
     TemplateOutlet19Component,
-    Portfolio21Component
+    Portfolio21Component,
+    IntroComponent
   ],
   imports: [
     BrowserModule,
