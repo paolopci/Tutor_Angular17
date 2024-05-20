@@ -1,0 +1,27 @@
+form {
+    width: 780px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px 50px 40px;
+    box-shadow: 1px 4px 10px 1px #aaa;
+    font-family: 'Swgoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 25px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+button {
+    display: block;
+    border-radius: 25px;
+    margin: 20px auto 0;
+}
+
+button:hover{
+    background-color: #c9c9c9;
+    transition: 0,3s ease-in-out;
+    letter-spacing: 0.2em;
+    color: black;
+}

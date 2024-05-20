@@ -1,0 +1,26 @@
+<div class="text-center">
+    <button class="btn btn-outline-primary" (click)="toggleMode()">
+        {{colorMode==='lightMode'?'Switch to DarkMode':'Switch to Light Mode'}}
+    </button>
+</div>
+<br>
+<div class="box" [ngClass]="colorMode">
+    <h1>Light Mode</h1>
+    <p>
+        Placeholder content for this accordion, which is
+        intended to demonstrate the <code>.accordion-flush</code> class.
+        This is the first item's accordion body.
+    </p>
+</div>
+<div class="box" [ngClass]="colorMode">
+    <h1>Dark Mode</h1>
+    <p>
+        Placeholder content for this accordion, which is
+        intended to demonstrate the <code>.accordion-flush</code> class.
+        This is the first item's accordion body.intended to demonstrate the
+        <code>.accordion-flush</code> class.
+        This is the first item's accordion body.intended to demonstrate the
+        <code>.accordion-flush</code> class.
+        This is the first item's accordion body.
+    </p>
+</div>

@@ -1,14 +1,11 @@
 import { Component, signal } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  selector: 'app-switch',
+  templateUrl: './switch.component.html',
+  styleUrl: './switch.component.css'
 })
-export class AppComponent {
-
-
-
+export class SwitchComponent {
   title = 'myHoldApp17';
 
   employeeRole: string = '';
@@ -23,7 +20,7 @@ export class AppComponent {
     { id: 6, name: 'EmployeeF', role: 'Analyst' },
     { id: 7, name: 'EmployeeG', role: 'Developer' },
     { id: 8, name: 'EmployeeH', role: 'Analyst' },
-    { id: 8, name: 'EmployeeI', role: 'HR' },
+    { id: 9, name: 'EmployeeI', role: 'HR' },
   ]);
 }
 

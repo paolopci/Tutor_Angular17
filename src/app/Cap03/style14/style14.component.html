@@ -1,0 +1,17 @@
+<form *ngIf="!formSubmitted">
+    <h1>Submit Form</h1>
+    <hr>
+    <div class="mb-3 mt-5 ">
+        <label for="name" class="form-label"> Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="nm" name="name"
+            [ngStyle]="{'background-color':nm ? 'lightgreen' : '#ffb6c1'}" required>
+    </div>
+    <div class="mb-3 form-group">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" [(ngModel)]="em" name="email"
+            [ngStyle]="{'background-color':emailIsValid ? 'lightgreen' : '#ffb6c1'}" (input)="checkEmailValidation(em)"
+            required>
+    </div>
+    <button class="btn btn-primary col-5" type="submit" [disabled]="isDisabled" (click)="showMessage()">Submit</button>
+</form>
+<p *ngIf="formSubmitted">Form is successfully submitted</p>

@@ -1,11 +1,11 @@
-<p [ngClass]="'updateStyles italicText letterFormat'">This is an example of ngClass directive</p>
-<br><br>
-<p [ngClass]="{
-  'updateStyles':true,
-  'italicText':false, 
-  'letterFormat':true}">
-  This is an example of ngClass directive
-</p>
-<br>
-<hr>
-<input type="text" placeholder="Enter text here..." (input)="textInput($event)" [ngClass]="{'txt':hasText}">
+<div class="" >
+  <div  class="col"  style="background-color: yellow;height: 60px;"></div>
+  <div class="row">
+    <div class="col-3" style="background-color: green;height: 800px;">
+      <app-carousel></app-carousel>>
+    </div>
+    <div class="col-9" >
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
