@@ -13,6 +13,7 @@ import { Container15Component } from './Cap03/container15/container15.component'
 import { Template16Component } from './Cap03/template16/template16.component';
 import { Template18Component } from './Cap03/template18/template18.component';
 import { TemplateOutlet19Component } from './Cap03/template-outlet19/template-outlet19.component';
+import { Portfolio21Component } from './Cap03/portfolio21/portfolio21.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TemplateOutlet19Component } from './Cap03/template-outlet19/template-ou
     Container15Component,
     Template16Component,
     Template18Component,
-    TemplateOutlet19Component
+    TemplateOutlet19Component,
+    Portfolio21Component
   ],
   imports: [
     BrowserModule,
