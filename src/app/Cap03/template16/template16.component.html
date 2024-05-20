@@ -1,0 +1,16 @@
+<ng-container *ngIf="isAuthorized; else notAuthorized">
+    <p>Authorized User</p>
+</ng-container>
+<ng-template #notAuthorized>
+    <h2>Not Authorized</h2>
+</ng-template>
+<br>
+<hr>
+<ng-container *ngIf="items.length>0; else notItems">
+    <ul *ngFor="let item of items">
+        <li>{{item}}</li>
+    </ul>
+</ng-container>
+<ng-template #notItems>
+    <h2>No items to display!!!</h2>
+</ng-template>

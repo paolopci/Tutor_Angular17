@@ -10,6 +10,7 @@ import { DarkModeComponent } from './Cap03/dark-mode/dark-mode.component';
 import { Style13Component } from './Cap03/style13/style13.component';
 import { Style14Component } from './Cap03/style14/style14.component';
 import { Container15Component } from './Cap03/container15/container15.component';
+import { Template16Component } from './Cap03/template16/template16.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { Container15Component } from './Cap03/container15/container15.component'
     DarkModeComponent,
     Style13Component,
     Style14Component,
-    Container15Component
+    Container15Component,
+    Template16Component
   ],
   imports: [
     BrowserModule,
