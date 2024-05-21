@@ -18,7 +18,9 @@ import { IntroComponent } from './Cap04/intro/intro.component';
 import { OnchangeComponent } from './Cap04/onchange/onchange.component';
 import { TestComponent } from './Cap04/test/test.component';
 import { DocheckComponent } from './Cap04/docheck/docheck.component';
-import { Test02Component } from './Cap04/Docheck/test02.component';
+import { Test02Component } from './Cap04/docheck/test02/test02.component';
+import { AfterContInitComponent } from './Cap04/after-cont-init/after-cont-init.component';
+import { Test04Component } from './Cap04/after-cont-init/test04/test04.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { Test02Component } from './Cap04/Docheck/test02.component';
     OnchangeComponent,
     TestComponent,
     DocheckComponent,
-    Test02Component
+    Test02Component,
+    AfterContInitComponent,
+    Test04Component
   ],
   imports: [
     BrowserModule,
