@@ -7,9 +7,12 @@ import { Component } from '@angular/core';
 })
 export class OnchangeComponent {
   inputValue: string = 'Now Paolo,  Value 2024';
+  counter: number = 0;
 
-  // constructor() {
-  //   console.log('Calling from constructor  - ', this.inputValue)
-  // }
+
+  updateValue() {
+    this.counter++;
+    this.inputValue = "Angular datetime" +this.counter;
+  }
 
 }

@@ -8,31 +8,20 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 export class TestComponent implements OnChanges {
 
   valore: string = '';
-  previsionValue: any;
-  currentValue: any;
-  isFirstChange: any;
+  previsionValue: string | undefined;
+  currentValue: string | undefined;
+  isFirstChange: boolean | undefined;
+
+  @Input() inputVal: string = '';
 
 
-
-
-  @Input() inputValue: string = '';
   ngOnChanges(changes: SimpleChanges): void {
-    console.log('Calling fron onChanges hook ...');
-    console.log(changes);
-
-
-    // come leggere currentValue, previsionValue e firstChange dalla class SimpleChanges
-    // Fare un ciclo for come sotto
-    for (let propName in changes) {
-      let chng = changes[propName];
-      this.currentValue = JSON.stringify(chng.currentValue);
-      this.previsionValue = JSON.stringify(chng.previousValue);
-      this.isFirstChange = JSON.stringify(chng.firstChange)
+    if (changes['inputValue']) {  // permette di tenere traccia di ogni cambiamento in inputValue property nel component parent.
+      this.previsionValue = changes['inputValue'].previousValue;
+      this.currentValue = changes['inputValue'].currentValue;
+      this.isFirstChange = changes['inputValue'].firstChange;
     }
 
-    
-    console.log('current value: ' + this.currentValue);
-    console.log('prevision value: ' + this.previsionValue);
-    console.log('is First change: ' + this.isFirstChange);
+    console.log(changes);
   }
 }
