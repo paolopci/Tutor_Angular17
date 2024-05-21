@@ -17,6 +17,8 @@ import { Portfolio21Component } from './Cap03/portfolio21/portfolio21.component'
 import { IntroComponent } from './Cap04/intro/intro.component';
 import { OnchangeComponent } from './Cap04/onchange/onchange.component';
 import { TestComponent } from './Cap04/test/test.component';
+import { DocheckComponent } from './Cap04/docheck/docheck.component';
+import { Test02Component } from './Cap04/Docheck/test02.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { TestComponent } from './Cap04/test/test.component';
     Portfolio21Component,
     IntroComponent,
     OnchangeComponent,
-    TestComponent
+    TestComponent,
+    DocheckComponent,
+    Test02Component
   ],
   imports: [
     BrowserModule,
