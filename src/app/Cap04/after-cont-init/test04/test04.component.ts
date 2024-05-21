@@ -1,15 +1,21 @@
-import { Component, DoCheck } from '@angular/core';
+import { Component, DoCheck, AfterContentInit, ViewChild, ElementRef, ContentChild } from '@angular/core';
 
 @Component({
   selector: 'app-test04',
   templateUrl: './test04.component.html',
   styleUrl: './test04.component.css'
 })
-export class Test04Component implements DoCheck {
+export class Test04Component implements AfterContentInit {
+
+  @ViewChild('wrapper') wrapper!: ElementRef;
+  @ContentChild('contentWrapper') content!: ElementRef;
 
 
-  ngDoCheck(): void {
-    console.log('ngDoCheck was invoked ...');
+  ngAfterContentInit(): void {
+    console.log('ngAfterContentInit was invoked....');
+    console.log('ngAfterContentInit - wrapper', this.wrapper);
+    console.log('ngAfterContentInit - ','contentWrapper', this.content);
+
   }
 
 }
