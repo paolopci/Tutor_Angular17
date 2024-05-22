@@ -21,6 +21,8 @@ import { DocheckComponent } from './Cap04/docheck/docheck.component';
 import { Test02Component } from './Cap04/docheck/test02/test02.component';
 import { AfterContInitComponent } from './Cap04/after-cont-init/after-cont-init.component';
 import { Test04Component } from './Cap04/after-cont-init/test04/test04.component';
+import { InputComponent } from './Cap05/input/input.component';
+import { ChildComponent } from './Cap05/input/child/child.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { Test04Component } from './Cap04/after-cont-init/test04/test04.component
     DocheckComponent,
     Test02Component,
     AfterContInitComponent,
-    Test04Component
+    Test04Component,
+    InputComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
