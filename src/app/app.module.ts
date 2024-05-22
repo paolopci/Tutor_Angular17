@@ -27,6 +27,8 @@ import { AppOutputParentComponent } from './Cap05/app-output-parent/app-output-p
 import { ChildOutputComponent } from './Cap05/app-output-parent/child-output/child-output.component';
 import { ParentShareComponent } from './Cap05/parent-share/parent-share.component';
 import { ChildShareComponent } from './Cap05/parent-share/child-share/child-share.component';
+import { ParentViewChildComponent } from './Cap05/parent-view-child/parent-view-child.component';
+import { ChildViewChildComponent } from './Cap05/parent-view-child/child-view-child/child-view-child.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,9 @@ import { ChildShareComponent } from './Cap05/parent-share/child-share/child-shar
     AppOutputParentComponent,
     ChildOutputComponent,
     ParentShareComponent,
-    ChildShareComponent
+    ChildShareComponent,
+    ParentViewChildComponent,
+    ChildViewChildComponent
   ],
   imports: [
     BrowserModule,

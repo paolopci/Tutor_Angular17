@@ -17,6 +17,7 @@ import { AfterContInitComponent } from './Cap04/after-cont-init/after-cont-init.
 import { InputComponent } from './Cap05/input/input.component';
 import { AppOutputParentComponent } from './Cap05/app-output-parent/app-output-parent.component';
 import { ParentShareComponent } from './Cap05/parent-share/parent-share.component';
+import { ParentViewChildComponent } from './Cap05/parent-view-child/parent-view-child.component';
 
 
 const routes: Routes = [
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: 'input', component: InputComponent },
   { path: 'output', component: AppOutputParentComponent },
   { path: 'share', component: ParentShareComponent },
+  { path: 'viewCh', component: ParentViewChildComponent },
 ];
 
 @NgModule({
