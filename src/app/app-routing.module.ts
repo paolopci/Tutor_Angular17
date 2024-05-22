@@ -15,6 +15,7 @@ import { OnchangeComponent } from './Cap04/onchange/onchange.component';
 import { DocheckComponent } from './Cap04/docheck/docheck.component';
 import { AfterContInitComponent } from './Cap04/after-cont-init/after-cont-init.component';
 import { InputComponent } from './Cap05/input/input.component';
+import { AppOutputParentComponent } from './Cap05/app-output-parent/app-output-parent.component';
 
 
 const routes: Routes = [
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'docheck', component: DocheckComponent },
   { path: 'after', component: AfterContInitComponent },
   { path: 'input', component: InputComponent },
+  { path: 'output', component: AppOutputParentComponent },
 ];
 
 @NgModule({

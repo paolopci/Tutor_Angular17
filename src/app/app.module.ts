@@ -23,6 +23,8 @@ import { AfterContInitComponent } from './Cap04/after-cont-init/after-cont-init.
 import { Test04Component } from './Cap04/after-cont-init/test04/test04.component';
 import { InputComponent } from './Cap05/input/input.component';
 import { ChildComponent } from './Cap05/input/child/child.component';
+import { AppOutputParentComponent } from './Cap05/app-output-parent/app-output-parent.component';
+import { ChildOutputComponent } from './Cap05/app-output-parent/child-output/child-output.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { ChildComponent } from './Cap05/input/child/child.component';
     AfterContInitComponent,
     Test04Component,
     InputComponent,
-    ChildComponent
+    ChildComponent,
+    AppOutputParentComponent,
+    ChildOutputComponent
   ],
   imports: [
     BrowserModule,
