@@ -16,6 +16,7 @@ import { DocheckComponent } from './Cap04/docheck/docheck.component';
 import { AfterContInitComponent } from './Cap04/after-cont-init/after-cont-init.component';
 import { InputComponent } from './Cap05/input/input.component';
 import { AppOutputParentComponent } from './Cap05/app-output-parent/app-output-parent.component';
+import { ParentShareComponent } from './Cap05/parent-share/parent-share.component';
 
 
 const routes: Routes = [
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path: 'after', component: AfterContInitComponent },
   { path: 'input', component: InputComponent },
   { path: 'output', component: AppOutputParentComponent },
+  { path: 'share', component: ParentShareComponent },
 ];
 
 @NgModule({

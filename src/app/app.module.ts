@@ -25,6 +25,8 @@ import { InputComponent } from './Cap05/input/input.component';
 import { ChildComponent } from './Cap05/input/child/child.component';
 import { AppOutputParentComponent } from './Cap05/app-output-parent/app-output-parent.component';
 import { ChildOutputComponent } from './Cap05/app-output-parent/child-output/child-output.component';
+import { ParentShareComponent } from './Cap05/parent-share/parent-share.component';
+import { ChildShareComponent } from './Cap05/parent-share/child-share/child-share.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,9 @@ import { ChildOutputComponent } from './Cap05/app-output-parent/child-output/chi
     InputComponent,
     ChildComponent,
     AppOutputParentComponent,
-    ChildOutputComponent
+    ChildOutputComponent,
+    ParentShareComponent,
+    ChildShareComponent
   ],
   imports: [
     BrowserModule,
