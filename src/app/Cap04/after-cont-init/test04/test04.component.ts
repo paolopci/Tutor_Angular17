@@ -1,14 +1,14 @@
-import { Component, AfterContentInit, ViewChild, ElementRef, ContentChild, AfterContentChecked, AfterViewInit, AfterViewChecked } from '@angular/core';
+import {
+  Component, AfterContentInit, ViewChild, ElementRef, ContentChild, AfterContentChecked, AfterViewInit,
+  AfterViewChecked, OnDestroy} from '@angular/core';
 
 @Component({
   selector: 'app-test04',
   templateUrl: './test04.component.html',
   styleUrl: './test04.component.css'
 })
-export class Test04Component implements AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked {
-
-
-
+export class Test04Component implements AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
+ 
   @ViewChild('wrapper') wrapper!: ElementRef;
   @ContentChild('contentWrapper') content!: ElementRef;
 
@@ -29,6 +29,10 @@ export class Test04Component implements AfterContentInit, AfterContentChecked, A
 
   ngAfterViewChecked(): void {
     console.log('@@ --- ngAfterViewChecked was invoked....');
+  }
+
+  ngOnDestroy(): void {
+    console.log('#######  ngOnDestroy was invoked....');
   }
 }
 

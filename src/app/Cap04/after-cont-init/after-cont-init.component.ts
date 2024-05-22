@@ -8,17 +8,22 @@ import { Component, AfterContentInit, DoCheck } from '@angular/core';
 export class AfterContInitComponent implements DoCheck {
 
   dataFromParents = '';
+  displayComponent: boolean = true;
 
   ngDoCheck(): void {
     console.log("ngDoCheck was invoked...");
   }
 
-  // ngAfterContentInit(): void {
-  //   console.log('ngAfterContentInit was invoked...');
-  // }
+  ngAfterContentInit(): void {
+    console.log('ngAfterContentInit was invoked...');
+  }
 
   sendDataChild(): void {
     let random = Math.floor(Math.random() * 10);
     this.dataFromParents = "Random Number: " + random;
+  }
+
+  toogle(){
+    this.displayComponent=!this.displayComponent;
   }
 }

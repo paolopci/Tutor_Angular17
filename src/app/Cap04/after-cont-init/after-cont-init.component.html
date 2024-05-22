@@ -2,7 +2,9 @@
 <div>
     <h2>Parent Component</h2>
     <button class="btn btn-primary" (click)="sendDataChild()">Generate Numbers</button>
-    <app-test04>
+    <button class="btn btn-warning" (click)="toogle()">Hide / Show Child</button>
+
+    <app-test04 *ngIf="displayComponent">
         <h3>{{dataFromParents}}</h3>
         <div #contentWrapper>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolorum unde! Error dolorum non, quasi
