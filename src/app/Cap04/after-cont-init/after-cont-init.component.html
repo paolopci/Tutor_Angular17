@@ -1,0 +1,15 @@
+<h1>Component Updation Hooks</h1>
+<div>
+    <h2>Parent Component</h2>
+    <button class="btn btn-primary" (click)="sendDataChild()">Generate Numbers</button>
+    <button class="btn btn-warning" (click)="toogle()">Hide / Show Child</button>
+
+    <app-test04 *ngIf="displayComponent">
+        <h3>{{dataFromParents}}</h3>
+        <div #contentWrapper>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolorum unde! Error dolorum non, quasi
+            corrupti exercitationem consequuntur odit. Necessitatibus amet laboriosam, in aliquid debitis iste aperiam
+            dignissimos. Voluptates, fuga.
+        </div>
+    </app-test04>
+</div>
