@@ -21,6 +21,7 @@ import { ParentViewChildComponent } from './Cap05/parent-view-child/parent-view-
 import { AppHostBindingComponent } from './Cap05/app-host-binding/app-host-binding.component';
 import { AppPickColorBindingComponent } from './Cap05/app-pick-color-binding/app-pick-color-binding.component';
 import { AppBuildPipesComponent } from './Cap06/app-build-pipes/app-build-pipes.component';
+import { AppSlidePipeComponent } from './Cap06/app-slide-pipe/app-slide-pipe.component';
 
 
 const routes: Routes = [
@@ -44,6 +45,7 @@ const routes: Routes = [
   { path: 'hostb', component: AppHostBindingComponent },
   { path: 'pick', component: AppPickColorBindingComponent },
   { path: 'buildp', component: AppBuildPipesComponent },
+  { path: 'slidep', component: AppSlidePipeComponent },
 ];
 
 @NgModule({

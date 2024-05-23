@@ -33,6 +33,7 @@ import { HighlightElementDirective } from './Cap05/directives/highlight-element.
 import { AppHostBindingComponent } from './Cap05/app-host-binding/app-host-binding.component';
 import { AppPickColorBindingComponent } from './Cap05/app-pick-color-binding/app-pick-color-binding.component';
 import { AppBuildPipesComponent } from './Cap06/app-build-pipes/app-build-pipes.component';
+import { AppSlidePipeComponent } from './Cap06/app-slide-pipe/app-slide-pipe.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { AppBuildPipesComponent } from './Cap06/app-build-pipes/app-build-pipes.
     HighlightElementDirective,
     AppHostBindingComponent,
     AppPickColorBindingComponent,
-    AppBuildPipesComponent
+    AppBuildPipesComponent,
+    AppSlidePipeComponent
   ],
   imports: [
     BrowserModule,
