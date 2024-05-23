@@ -29,6 +29,8 @@ import { ParentShareComponent } from './Cap05/parent-share/parent-share.componen
 import { ChildShareComponent } from './Cap05/parent-share/child-share/child-share.component';
 import { ParentViewChildComponent } from './Cap05/parent-view-child/parent-view-child.component';
 import { ChildViewChildComponent } from './Cap05/parent-view-child/child-view-child/child-view-child.component';
+import { HighlightElementDirective } from './Cap05/directives/highlight-element.directive';
+import { AppHostBindingComponent } from './Cap05/app-host-binding/app-host-binding.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +59,9 @@ import { ChildViewChildComponent } from './Cap05/parent-view-child/child-view-ch
     ParentShareComponent,
     ChildShareComponent,
     ParentViewChildComponent,
-    ChildViewChildComponent
+    ChildViewChildComponent,
+    HighlightElementDirective,
+    AppHostBindingComponent
   ],
   imports: [
     BrowserModule,
