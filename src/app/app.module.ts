@@ -32,6 +32,7 @@ import { ChildViewChildComponent } from './Cap05/parent-view-child/child-view-ch
 import { HighlightElementDirective } from './Cap05/directives/highlight-element.directive';
 import { AppHostBindingComponent } from './Cap05/app-host-binding/app-host-binding.component';
 import { AppPickColorBindingComponent } from './Cap05/app-pick-color-binding/app-pick-color-binding.component';
+import { AppBuildPipesComponent } from './Cap06/app-build-pipes/app-build-pipes.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { AppPickColorBindingComponent } from './Cap05/app-pick-color-binding/app
     ChildViewChildComponent,
     HighlightElementDirective,
     AppHostBindingComponent,
-    AppPickColorBindingComponent
+    AppPickColorBindingComponent,
+    AppBuildPipesComponent
   ],
   imports: [
     BrowserModule,
