@@ -1,0 +1,11 @@
+<div>
+    <h1>Output: Parent Component</h1>
+    <app-child-output (myEvent)="receiveChildEvent($event)"
+        (myPerson)="receiveUserChildEvent($event)"></app-child-output>
+
+    <br>
+    <hr>
+    <p>message return from Child component : {{message}}</p>
+    <br>
+    <p>{{per| json}}</p>
+</div>

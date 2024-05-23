@@ -1,12 +1,16 @@
-import { Component, signal } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild, signal } from '@angular/core';
+import { ChildViewChildComponent } from './Cap05/parent-view-child/child-view-child/child-view-child.component';
+import { ChildComponent } from './Cap05/input/child/child.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
 
+  @ViewChild(ChildViewChildComponent) childComponent?: ChildViewChildComponent;
+  @ViewChild('btnIncr') btnRef?: ElementRef<HTMLButtonElement>;
 
 
   title = 'myHoldApp17';
@@ -25,6 +29,17 @@ export class AppComponent {
     { id: 8, name: 'EmployeeH', role: 'Analyst' },
     { id: 8, name: 'EmployeeI', role: 'HR' },
   ]);
+
+  incrementChildCounter() {
+    console.log(this.childComponent);
+    this.childComponent?.incrementCounter();
+  }
+
+  ngAfterViewInit(): void {
+    if (this.btnRef?.nativeElement) {
+      this.btnRef.nativeElement.innerHTML = 'Counter ++';
+    }
+  }
 }
 
 

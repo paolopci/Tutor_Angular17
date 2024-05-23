@@ -1,0 +1,14 @@
+<div class="container">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cs of showData">
+                <td>{{cs.id}}</td>
+                <td>{{cs.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

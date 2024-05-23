@@ -14,6 +14,12 @@ import { IntroComponent } from './Cap04/intro/intro.component';
 import { OnchangeComponent } from './Cap04/onchange/onchange.component';
 import { DocheckComponent } from './Cap04/docheck/docheck.component';
 import { AfterContInitComponent } from './Cap04/after-cont-init/after-cont-init.component';
+import { InputComponent } from './Cap05/input/input.component';
+import { AppOutputParentComponent } from './Cap05/app-output-parent/app-output-parent.component';
+import { ParentShareComponent } from './Cap05/parent-share/parent-share.component';
+import { ParentViewChildComponent } from './Cap05/parent-view-child/parent-view-child.component';
+import { AppHostBindingComponent } from './Cap05/app-host-binding/app-host-binding.component';
+import { AppPickColorBindingComponent } from './Cap05/app-pick-color-binding/app-pick-color-binding.component';
 
 
 const routes: Routes = [
@@ -30,6 +36,12 @@ const routes: Routes = [
   { path: 'change', component: OnchangeComponent },
   { path: 'docheck', component: DocheckComponent },
   { path: 'after', component: AfterContInitComponent },
+  { path: 'input', component: InputComponent },
+  { path: 'output', component: AppOutputParentComponent },
+  { path: 'share', component: ParentShareComponent },
+  { path: 'viewCh', component: ParentViewChildComponent },
+  { path: 'hostb', component: AppHostBindingComponent },
+  { path: 'pick', component: AppPickColorBindingComponent },
 ];
 
 @NgModule({

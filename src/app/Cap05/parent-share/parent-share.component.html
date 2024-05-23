@@ -1,0 +1,10 @@
+<div class="container">
+    <button class="btn btn-warning" (click)="addItem()">Add Item</button>
+    
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+           Child Component
+        </div>
+        <app-child-share *ngIf="itemsArr.length>0"  [items]="itemsArr" (itemDelete)="deleteItem($event)"></app-child-share>
+    </div>
+</div>

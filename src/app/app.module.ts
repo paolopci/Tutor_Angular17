@@ -21,6 +21,17 @@ import { DocheckComponent } from './Cap04/docheck/docheck.component';
 import { Test02Component } from './Cap04/docheck/test02/test02.component';
 import { AfterContInitComponent } from './Cap04/after-cont-init/after-cont-init.component';
 import { Test04Component } from './Cap04/after-cont-init/test04/test04.component';
+import { InputComponent } from './Cap05/input/input.component';
+import { ChildComponent } from './Cap05/input/child/child.component';
+import { AppOutputParentComponent } from './Cap05/app-output-parent/app-output-parent.component';
+import { ChildOutputComponent } from './Cap05/app-output-parent/child-output/child-output.component';
+import { ParentShareComponent } from './Cap05/parent-share/parent-share.component';
+import { ChildShareComponent } from './Cap05/parent-share/child-share/child-share.component';
+import { ParentViewChildComponent } from './Cap05/parent-view-child/parent-view-child.component';
+import { ChildViewChildComponent } from './Cap05/parent-view-child/child-view-child/child-view-child.component';
+import { HighlightElementDirective } from './Cap05/directives/highlight-element.directive';
+import { AppHostBindingComponent } from './Cap05/app-host-binding/app-host-binding.component';
+import { AppPickColorBindingComponent } from './Cap05/app-pick-color-binding/app-pick-color-binding.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +52,18 @@ import { Test04Component } from './Cap04/after-cont-init/test04/test04.component
     DocheckComponent,
     Test02Component,
     AfterContInitComponent,
-    Test04Component
+    Test04Component,
+    InputComponent,
+    ChildComponent,
+    AppOutputParentComponent,
+    ChildOutputComponent,
+    ParentShareComponent,
+    ChildShareComponent,
+    ParentViewChildComponent,
+    ChildViewChildComponent,
+    HighlightElementDirective,
+    AppHostBindingComponent,
+    AppPickColorBindingComponent
   ],
   imports: [
     BrowserModule,
