@@ -34,6 +34,7 @@ import { AppHostBindingComponent } from './Cap05/app-host-binding/app-host-bindi
 import { AppPickColorBindingComponent } from './Cap05/app-pick-color-binding/app-pick-color-binding.component';
 import { AppBuildPipesComponent } from './Cap06/app-build-pipes/app-build-pipes.component';
 import { AppSlidePipeComponent } from './Cap06/app-slide-pipe/app-slide-pipe.component';
+import { AppPageNavigSlidePipeComponent } from './Cap06/app-page-navig-slide-pipe/app-page-navig-slide-pipe.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { AppSlidePipeComponent } from './Cap06/app-slide-pipe/app-slide-pipe.com
     AppHostBindingComponent,
     AppPickColorBindingComponent,
     AppBuildPipesComponent,
-    AppSlidePipeComponent
+    AppSlidePipeComponent,
+    AppPageNavigSlidePipeComponent
   ],
   imports: [
     BrowserModule,
