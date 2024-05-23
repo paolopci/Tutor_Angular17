@@ -19,6 +19,7 @@ import { AppOutputParentComponent } from './Cap05/app-output-parent/app-output-p
 import { ParentShareComponent } from './Cap05/parent-share/parent-share.component';
 import { ParentViewChildComponent } from './Cap05/parent-view-child/parent-view-child.component';
 import { AppHostBindingComponent } from './Cap05/app-host-binding/app-host-binding.component';
+import { AppPickColorBindingComponent } from './Cap05/app-pick-color-binding/app-pick-color-binding.component';
 
 
 const routes: Routes = [
@@ -40,6 +41,7 @@ const routes: Routes = [
   { path: 'share', component: ParentShareComponent },
   { path: 'viewCh', component: ParentViewChildComponent },
   { path: 'hostb', component: AppHostBindingComponent },
+  { path: 'pick', component: AppPickColorBindingComponent },
 ];
 
 @NgModule({
