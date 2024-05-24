@@ -3,7 +3,7 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {FormsModule} from "@angular/forms";
+import { FormsModule } from "@angular/forms";
 import { SwitchComponent } from './switch/switch.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { DarkModeComponent } from './Cap03/dark-mode/dark-mode.component';
@@ -38,6 +38,9 @@ import { AppPageNavigSlidePipeComponent } from './Cap06/app-page-navig-slide-pip
 import { AppPoundtokgConvertComponent } from './Cap06/app-poundtokg-convert/app-poundtokg-convert.component';
 import { AppJsonPipeComponent } from './Cap06/app-json-pipe/app-json-pipe.component';
 import { AppTabledatatoJsonComponent } from './Cap06/app-tabledatato-json/app-tabledatato-json.component';
+import { AppCustomPipeComponent } from './Cap07/app-custom-pipe/app-custom-pipe.component';
+import { AppendTextPipe } from './Cap07/pipes/append-text.pipe';
+
 
 @NgModule({
   declarations: [
@@ -75,7 +78,10 @@ import { AppTabledatatoJsonComponent } from './Cap06/app-tabledatato-json/app-ta
     AppPageNavigSlidePipeComponent,
     AppPoundtokgConvertComponent,
     AppJsonPipeComponent,
-    AppTabledatatoJsonComponent
+    AppTabledatatoJsonComponent,
+    AppCustomPipeComponent,
+    AppendTextPipe,
+  
   ],
   imports: [
     BrowserModule,

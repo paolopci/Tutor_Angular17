@@ -26,6 +26,7 @@ import { AppPageNavigSlidePipeComponent } from './Cap06/app-page-navig-slide-pip
 import { AppPoundtokgConvertComponent } from './Cap06/app-poundtokg-convert/app-poundtokg-convert.component';
 import { AppJsonPipeComponent } from './Cap06/app-json-pipe/app-json-pipe.component';
 import { AppTabledatatoJsonComponent } from './Cap06/app-tabledatato-json/app-tabledatato-json.component';
+import { AppCustomPipeComponent } from './Cap07/app-custom-pipe/app-custom-pipe.component';
 
 
 const routes: Routes = [
@@ -54,6 +55,7 @@ const routes: Routes = [
   { path: 'pound', component: AppPoundtokgConvertComponent },
   { path: 'jsonp', component: AppJsonPipeComponent },
   { path: 'tablejson', component: AppTabledatatoJsonComponent },
+   { path: 'apptext', component: AppCustomPipeComponent },
 
 ];
 
