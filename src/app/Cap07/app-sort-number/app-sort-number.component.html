@@ -1,0 +1,14 @@
+<h1>Given Numbers <span>{{numbers}}</span></h1>
+
+<div class="button-container">
+    <button class="btn btn-primary" (click)="sortOrder='asc'; showSorting()">Sort Ascending</button>
+    <button class="btn btn-secondary" (click)="sortOrder='desc'; showSorting()">Sort Descending</button>
+</div>
+
+<div class="sorted-output">
+    <h2 *ngIf="sortOrder==='asc'">Ascending Order</h2>
+    <h2 *ngIf="sortOrder==='desc'">Descending Order</h2>
+    <ul class="number-list">
+        <li *ngFor="let number of sortedNumbers">{{number}}</li>
+    </ul>
+</div>

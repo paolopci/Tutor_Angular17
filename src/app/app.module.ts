@@ -40,6 +40,8 @@ import { AppJsonPipeComponent } from './Cap06/app-json-pipe/app-json-pipe.compon
 import { AppTabledatatoJsonComponent } from './Cap06/app-tabledatato-json/app-tabledatato-json.component';
 import { AppCustomPipeComponent } from './Cap07/app-custom-pipe/app-custom-pipe.component';
 import { AppendTextPipe } from './Cap07/pipes/append-text.pipe';
+import { SortNumbersPipe } from './Cap07/pipes/sort-numbers.pipe';
+import { AppSortNumberComponent } from './Cap07/app-sort-number/app-sort-number.component';
 
 
 @NgModule({
@@ -81,6 +83,8 @@ import { AppendTextPipe } from './Cap07/pipes/append-text.pipe';
     AppTabledatatoJsonComponent,
     AppCustomPipeComponent,
     AppendTextPipe,
+    SortNumbersPipe,
+    AppSortNumberComponent,
   
   ],
   imports: [
