@@ -23,6 +23,7 @@ import { AppPickColorBindingComponent } from './Cap05/app-pick-color-binding/app
 import { AppBuildPipesComponent } from './Cap06/app-build-pipes/app-build-pipes.component';
 import { AppSlidePipeComponent } from './Cap06/app-slide-pipe/app-slide-pipe.component';
 import { AppPageNavigSlidePipeComponent } from './Cap06/app-page-navig-slide-pipe/app-page-navig-slide-pipe.component';
+import { AppPoundtokgConvertComponent } from './Cap06/app-poundtokg-convert/app-poundtokg-convert.component';
 
 
 const routes: Routes = [
@@ -48,6 +49,8 @@ const routes: Routes = [
   { path: 'buildp', component: AppBuildPipesComponent },
   { path: 'slidep', component: AppSlidePipeComponent },
   { path: 'pagenavs', component: AppPageNavigSlidePipeComponent },
+  { path: 'pound', component: AppPoundtokgConvertComponent },
+
 ];
 
 @NgModule({
