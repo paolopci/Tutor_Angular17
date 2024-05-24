@@ -20,6 +20,12 @@ import { ParentShareComponent } from './Cap05/parent-share/parent-share.componen
 import { ParentViewChildComponent } from './Cap05/parent-view-child/parent-view-child.component';
 import { AppHostBindingComponent } from './Cap05/app-host-binding/app-host-binding.component';
 import { AppPickColorBindingComponent } from './Cap05/app-pick-color-binding/app-pick-color-binding.component';
+import { AppBuildPipesComponent } from './Cap06/app-build-pipes/app-build-pipes.component';
+import { AppSlidePipeComponent } from './Cap06/app-slide-pipe/app-slide-pipe.component';
+import { AppPageNavigSlidePipeComponent } from './Cap06/app-page-navig-slide-pipe/app-page-navig-slide-pipe.component';
+import { AppPoundtokgConvertComponent } from './Cap06/app-poundtokg-convert/app-poundtokg-convert.component';
+import { AppJsonPipeComponent } from './Cap06/app-json-pipe/app-json-pipe.component';
+import { AppTabledatatoJsonComponent } from './Cap06/app-tabledatato-json/app-tabledatato-json.component';
 
 
 const routes: Routes = [
@@ -42,6 +48,13 @@ const routes: Routes = [
   { path: 'viewCh', component: ParentViewChildComponent },
   { path: 'hostb', component: AppHostBindingComponent },
   { path: 'pick', component: AppPickColorBindingComponent },
+  { path: 'buildp', component: AppBuildPipesComponent },
+  { path: 'slidep', component: AppSlidePipeComponent },
+  { path: 'pagenavs', component: AppPageNavigSlidePipeComponent },
+  { path: 'pound', component: AppPoundtokgConvertComponent },
+  { path: 'jsonp', component: AppJsonPipeComponent },
+  { path: 'tablejson', component: AppTabledatatoJsonComponent },
+
 ];
 
 @NgModule({
