@@ -46,6 +46,7 @@ import { AppLetterCountComponent } from './Cap07/app-letter-count/app-letter-cou
 import { LetterCountPipe } from './Cap07/pipes/letter-count.pipe';
 import { IncrementCountPipe } from './Cap07/pipes/increment-count.pipe';
 import { AppIncrementCountComponent } from './Cap07/app-increment-count/app-increment-count.component';
+import { SumOfNumbersPipe } from './Cap07/pipes/sum-of-numbers.pipe';
 
 
 @NgModule({
@@ -93,6 +94,7 @@ import { AppIncrementCountComponent } from './Cap07/app-increment-count/app-incr
     LetterCountPipe,
     IncrementCountPipe,
     AppIncrementCountComponent,
+    SumOfNumbersPipe,
   
   ],
   imports: [

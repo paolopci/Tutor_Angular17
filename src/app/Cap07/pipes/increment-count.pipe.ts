@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'incrementCount'
+  name: 'incrementCount',
+  pure: false
 })
 export class IncrementCountPipe implements PipeTransform {
 
