@@ -42,6 +42,10 @@ import { AppCustomPipeComponent } from './Cap07/app-custom-pipe/app-custom-pipe.
 import { AppendTextPipe } from './Cap07/pipes/append-text.pipe';
 import { SortNumbersPipe } from './Cap07/pipes/sort-numbers.pipe';
 import { AppSortNumberComponent } from './Cap07/app-sort-number/app-sort-number.component';
+import { AppLetterCountComponent } from './Cap07/app-letter-count/app-letter-count.component';
+import { LetterCountPipe } from './Cap07/pipes/letter-count.pipe';
+import { IncrementCountPipe } from './Cap07/pipes/increment-count.pipe';
+import { AppIncrementCountComponent } from './Cap07/app-increment-count/app-increment-count.component';
 
 
 @NgModule({
@@ -85,6 +89,10 @@ import { AppSortNumberComponent } from './Cap07/app-sort-number/app-sort-number.
     AppendTextPipe,
     SortNumbersPipe,
     AppSortNumberComponent,
+    AppLetterCountComponent,
+    LetterCountPipe,
+    IncrementCountPipe,
+    AppIncrementCountComponent,
   
   ],
   imports: [

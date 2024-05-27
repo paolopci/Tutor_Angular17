@@ -28,6 +28,8 @@ import { AppJsonPipeComponent } from './Cap06/app-json-pipe/app-json-pipe.compon
 import { AppTabledatatoJsonComponent } from './Cap06/app-tabledatato-json/app-tabledatato-json.component';
 import { AppCustomPipeComponent } from './Cap07/app-custom-pipe/app-custom-pipe.component';
 import { AppSortNumberComponent } from './Cap07/app-sort-number/app-sort-number.component';
+import { AppLetterCountComponent } from './Cap07/app-letter-count/app-letter-count.component';
+import { AppIncrementCountComponent } from './Cap07/app-increment-count/app-increment-count.component';
 
 
 const routes: Routes = [
@@ -58,6 +60,8 @@ const routes: Routes = [
   { path: 'tablejson', component: AppTabledatatoJsonComponent },
   { path: 'apptext', component: AppCustomPipeComponent },
   { path: 'sortn', component: AppSortNumberComponent },
+  { path: 'letterc', component: AppLetterCountComponent },
+  { path: 'increment', component: AppIncrementCountComponent },
 
 ];
 
