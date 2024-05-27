@@ -1,0 +1,10 @@
+<div>
+    <h1>Letter Count</h1>
+    <div class="inputbox">
+        <input type="text" required [(ngModel)]="stringVal">
+        <span>Enter String</span>
+    </div>
+    <div class="result-container">
+        <p>{{stringVal|letterCount}} letters.</p>
+    </div>
+</div>

@@ -3,7 +3,7 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {FormsModule} from "@angular/forms";
+import { FormsModule } from "@angular/forms";
 import { SwitchComponent } from './switch/switch.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { DarkModeComponent } from './Cap03/dark-mode/dark-mode.component';
@@ -38,6 +38,16 @@ import { AppPageNavigSlidePipeComponent } from './Cap06/app-page-navig-slide-pip
 import { AppPoundtokgConvertComponent } from './Cap06/app-poundtokg-convert/app-poundtokg-convert.component';
 import { AppJsonPipeComponent } from './Cap06/app-json-pipe/app-json-pipe.component';
 import { AppTabledatatoJsonComponent } from './Cap06/app-tabledatato-json/app-tabledatato-json.component';
+import { AppCustomPipeComponent } from './Cap07/app-custom-pipe/app-custom-pipe.component';
+import { AppendTextPipe } from './Cap07/pipes/append-text.pipe';
+import { SortNumbersPipe } from './Cap07/pipes/sort-numbers.pipe';
+import { AppSortNumberComponent } from './Cap07/app-sort-number/app-sort-number.component';
+import { AppLetterCountComponent } from './Cap07/app-letter-count/app-letter-count.component';
+import { LetterCountPipe } from './Cap07/pipes/letter-count.pipe';
+import { IncrementCountPipe } from './Cap07/pipes/increment-count.pipe';
+import { AppIncrementCountComponent } from './Cap07/app-increment-count/app-increment-count.component';
+import { SumOfNumbersPipe } from './Cap07/pipes/sum-of-numbers.pipe';
+
 
 @NgModule({
   declarations: [
@@ -75,7 +85,17 @@ import { AppTabledatatoJsonComponent } from './Cap06/app-tabledatato-json/app-ta
     AppPageNavigSlidePipeComponent,
     AppPoundtokgConvertComponent,
     AppJsonPipeComponent,
-    AppTabledatatoJsonComponent
+    AppTabledatatoJsonComponent,
+    AppCustomPipeComponent,
+    AppendTextPipe,
+    SortNumbersPipe,
+    AppSortNumberComponent,
+    AppLetterCountComponent,
+    LetterCountPipe,
+    IncrementCountPipe,
+    AppIncrementCountComponent,
+    SumOfNumbersPipe,
+  
   ],
   imports: [
     BrowserModule,

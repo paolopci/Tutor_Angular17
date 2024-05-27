@@ -1,0 +1,17 @@
+<div class=" container card">
+    <div class="card-body">
+        <h1> increment Count (Pure & Impure Pipe)</h1>
+        <button class="btn btn-primary" (click)="incrementCounter()">Increment Counter</button>
+        <p>Counter Value: {{counterVal | incrementCount}}</p>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<div class=" container card">
+    <div class="card-body">
+        <h1> Sum of numbers (Impure Pipe)</h1>
+        <button class="btn btn-primary" (click)="updateValue()">Update Array, add numbers</button>
+        <p>Counter Value: {{myArray | sumOfNumbers}}</p>
+    </div>
+</div>
