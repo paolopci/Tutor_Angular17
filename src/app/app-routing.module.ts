@@ -37,10 +37,15 @@ import { AppParentRouteComponent } from './Cap08/app-parent-route/app-parent-rou
 import { AppChildRoute01Component } from './Cap08/app-child-route01/app-child-route01.component';
 import { AppChildRoute02Component } from './Cap08/app-child-route02/app-child-route02.component';
 import { AppRootPageComponent } from './Cap03/app-root-page/app-root-page.component';
+import { AppMenuMultiLevComponent } from './Cap08/app-menu-multi-lev/app-menu-multi-lev.component';
+import { AppProductsComponent } from './Cap08/app-menu-multi-lev/app-products.component';
+import { AppProductDettaglioOneComponent } from './Cap08/app-menu-multi-lev/app-product-dettaglio-one.component';
+import { AppProductDettaglioTwoComponent } from './Cap08/app-menu-multi-lev/app-product-dettaglio-two.component';
+import { AppProductDettaglioThreeComponent } from './Cap08/app-menu-multi-lev/app-product-dettaglio-three.component';
 
 
 const routes: Routes = [
-  { path: '', component: AppRootPageComponent },
+  { path: 'home', component: AppRootPageComponent },
   { path: 'switch', component: SwitchComponent },
   { path: 'dark', component: DarkModeComponent },
   { path: 'style', component: Style13Component },
@@ -78,10 +83,18 @@ const routes: Routes = [
       { path: 'child2', component: AppChildRoute02Component }
     ]
   },
+  { path: 'menulev', component: AppMenuMultiLevComponent },
+  {  // Menu multilivello
+    path: 'products', component: AppProductsComponent, children: [
+      { path: 'prod03', redirectTo: 'prod01', pathMatch: 'prefix' },
+      { path: 'prod01', component: AppProductDettaglioOneComponent },
+      { path: 'prod02', component: AppProductDettaglioTwoComponent },
+      { path: 'prod03', component: AppProductDettaglioThreeComponent },
+    ]
+  },
 
-
-  { path: '**', component: PageNotFoundComponent },
-
+  // { path: '**', component: PageNotFoundComponent },
+  { path: '**', redirectTo: 'home', pathMatch: 'full' },
 ];
 
 @NgModule({

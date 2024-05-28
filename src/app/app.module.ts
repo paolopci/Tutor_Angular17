@@ -55,6 +55,14 @@ import { AppParentRouteComponent } from './Cap08/app-parent-route/app-parent-rou
 import { AppChildRoute01Component } from './Cap08/app-child-route01/app-child-route01.component';
 import { AppChildRoute02Component } from './Cap08/app-child-route02/app-child-route02.component';
 import { AppRootPageComponent } from './Cap03/app-root-page/app-root-page.component';
+import { AppMenuMultiLevComponent } from './Cap08/app-menu-multi-lev/app-menu-multi-lev.component';
+import { AppProductsComponent } from './Cap08/app-menu-multi-lev/app-products.component';
+import { AppAboutComponent } from './Cap08/app-menu-multi-lev/app-about.component';
+import { AppContactComponent } from './Cap08/app-menu-multi-lev/app-contact.component';
+import { AppProductDettaglioOneComponent } from './Cap08/app-menu-multi-lev/app-product-dettaglio-one.component';
+import { AppProductDettaglioTwoComponent } from './Cap08/app-menu-multi-lev/app-product-dettaglio-two.component';
+import { AppProductDettaglioThreeComponent } from './Cap08/app-menu-multi-lev/app-product-dettaglio-three.component';
+
 
 
 
@@ -112,6 +120,13 @@ import { AppRootPageComponent } from './Cap03/app-root-page/app-root-page.compon
     AppChildRoute01Component,
     AppChildRoute02Component,
     AppRootPageComponent,
+    AppMenuMultiLevComponent,
+    AppProductsComponent,
+    AppAboutComponent,
+    AppContactComponent,
+    AppProductDettaglioOneComponent,
+    AppProductDettaglioTwoComponent,
+    AppProductDettaglioThreeComponent
   
   ],
   imports: [
