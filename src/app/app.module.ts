@@ -50,6 +50,12 @@ import { SumOfNumbersPipe } from './Cap07/pipes/sum-of-numbers.pipe';
 import { AppNavigationRouterlinkComponent } from './Cap08/app-navigation-routerlink/app-navigation-routerlink.component';
 import { AppNavBarComponent } from './Cap08/app-nav-bar/app-nav-bar.component';
 import { AppEmployeesComponent } from './Cap08/app-employees/app-employees.component';
+import { PageNotFoundComponent } from './Cap08/page-not-found/page-not-found.component';
+import { AppParentRouteComponent } from './Cap08/app-parent-route/app-parent-route.component';
+import { AppChildRoute01Component } from './Cap08/app-child-route01/app-child-route01.component';
+import { AppChildRoute02Component } from './Cap08/app-child-route02/app-child-route02.component';
+import { AppRootPageComponent } from './Cap03/app-root-page/app-root-page.component';
+
 
 
 @NgModule({
@@ -101,6 +107,11 @@ import { AppEmployeesComponent } from './Cap08/app-employees/app-employees.compo
     AppNavigationRouterlinkComponent,
     AppNavBarComponent,
     AppEmployeesComponent,
+    PageNotFoundComponent,
+    AppParentRouteComponent,
+    AppChildRoute01Component,
+    AppChildRoute02Component,
+    AppRootPageComponent,
   
   ],
   imports: [

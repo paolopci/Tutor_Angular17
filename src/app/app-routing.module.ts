@@ -32,9 +32,15 @@ import { AppLetterCountComponent } from './Cap07/app-letter-count/app-letter-cou
 import { AppIncrementCountComponent } from './Cap07/app-increment-count/app-increment-count.component';
 import { AppNavigationRouterlinkComponent } from './Cap08/app-navigation-routerlink/app-navigation-routerlink.component';
 import { AppEmployeesComponent } from './Cap08/app-employees/app-employees.component';
+import { PageNotFoundComponent } from './Cap08/page-not-found/page-not-found.component';
+import { AppParentRouteComponent } from './Cap08/app-parent-route/app-parent-route.component';
+import { AppChildRoute01Component } from './Cap08/app-child-route01/app-child-route01.component';
+import { AppChildRoute02Component } from './Cap08/app-child-route02/app-child-route02.component';
+import { AppRootPageComponent } from './Cap03/app-root-page/app-root-page.component';
 
 
 const routes: Routes = [
+  { path: '', component: AppRootPageComponent },
   { path: 'switch', component: SwitchComponent },
   { path: 'dark', component: DarkModeComponent },
   { path: 'style', component: Style13Component },
@@ -66,6 +72,15 @@ const routes: Routes = [
   { path: 'increment', component: AppIncrementCountComponent },
   { path: 'navlink', component: AppNavigationRouterlinkComponent },
   { path: 'emplo/:empName/:empId', component: AppEmployeesComponent },
+  {
+    path: 'parent', component: AppParentRouteComponent, children: [
+      { path: 'child1', component: AppChildRoute01Component },
+      { path: 'child2', component: AppChildRoute02Component }
+    ]
+  },
+
+
+  { path: '**', component: PageNotFoundComponent },
 
 ];
 
