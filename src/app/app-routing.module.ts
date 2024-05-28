@@ -42,6 +42,9 @@ import { AppProductsComponent } from './Cap08/app-menu-multi-lev/app-products.co
 import { AppProductDettaglioOneComponent } from './Cap08/app-menu-multi-lev/app-product-dettaglio-one.component';
 import { AppProductDettaglioTwoComponent } from './Cap08/app-menu-multi-lev/app-product-dettaglio-two.component';
 import { AppProductDettaglioThreeComponent } from './Cap08/app-menu-multi-lev/app-product-dettaglio-three.component';
+import { AppHomeModuleComponent } from './Cap08/app-home-module/app-home-module.component';
+
+
 
 
 const routes: Routes = [
@@ -76,6 +79,7 @@ const routes: Routes = [
   { path: 'letterc', component: AppLetterCountComponent },
   { path: 'increment', component: AppIncrementCountComponent },
   { path: 'navlink', component: AppNavigationRouterlinkComponent },
+  { path: 'homer', component: AppHomeModuleComponent },
   { path: 'emplo/:empName/:empId', component: AppEmployeesComponent },
   {
     path: 'parent', component: AppParentRouteComponent, children: [
@@ -93,8 +97,8 @@ const routes: Routes = [
     ]
   },
 
-  // { path: '**', component: PageNotFoundComponent },
-  { path: '**', redirectTo: 'home', pathMatch: 'full' },
+   //{ path: '**', component: PageNotFoundComponent },
+//  { path: '**', redirectTo: 'home', pathMatch: 'full' },
 ];
 
 @NgModule({

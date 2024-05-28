@@ -64,6 +64,13 @@ import { AppProductDettaglioTwoComponent } from './Cap08/app-menu-multi-lev/app-
 import { AppProductDettaglioThreeComponent } from './Cap08/app-menu-multi-lev/app-product-dettaglio-three.component';
 
 
+// import il routing module che ho creato x forChild
+import { AdminModule } from './admin/admin.module';
+import { AppHomeModuleComponent } from './Cap08/app-home-module/app-home-module.component';
+import { AppUserModuleComponent } from './Cap08/app-user-module/app-user-module.component';
+
+
+
 
 
 @NgModule({
@@ -126,13 +133,15 @@ import { AppProductDettaglioThreeComponent } from './Cap08/app-menu-multi-lev/ap
     AppContactComponent,
     AppProductDettaglioOneComponent,
     AppProductDettaglioTwoComponent,
-    AppProductDettaglioThreeComponent
-  
+    AppProductDettaglioThreeComponent,
+    AppHomeModuleComponent,AppUserModuleComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AdminModule,  // import il routing module che ho creato per forChild
   ],
   providers: [
     provideClientHydration()
