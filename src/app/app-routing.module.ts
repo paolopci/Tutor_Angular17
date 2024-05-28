@@ -31,6 +31,7 @@ import { AppSortNumberComponent } from './Cap07/app-sort-number/app-sort-number.
 import { AppLetterCountComponent } from './Cap07/app-letter-count/app-letter-count.component';
 import { AppIncrementCountComponent } from './Cap07/app-increment-count/app-increment-count.component';
 import { AppNavigationRouterlinkComponent } from './Cap08/app-navigation-routerlink/app-navigation-routerlink.component';
+import { AppEmployeesComponent } from './Cap08/app-employees/app-employees.component';
 
 
 const routes: Routes = [
@@ -64,6 +65,7 @@ const routes: Routes = [
   { path: 'letterc', component: AppLetterCountComponent },
   { path: 'increment', component: AppIncrementCountComponent },
   { path: 'navlink', component: AppNavigationRouterlinkComponent },
+  { path: 'emplo/:empName/:empId', component: AppEmployeesComponent },
 
 ];
 

@@ -49,6 +49,7 @@ import { AppIncrementCountComponent } from './Cap07/app-increment-count/app-incr
 import { SumOfNumbersPipe } from './Cap07/pipes/sum-of-numbers.pipe';
 import { AppNavigationRouterlinkComponent } from './Cap08/app-navigation-routerlink/app-navigation-routerlink.component';
 import { AppNavBarComponent } from './Cap08/app-nav-bar/app-nav-bar.component';
+import { AppEmployeesComponent } from './Cap08/app-employees/app-employees.component';
 
 
 @NgModule({
@@ -99,6 +100,7 @@ import { AppNavBarComponent } from './Cap08/app-nav-bar/app-nav-bar.component';
     SumOfNumbersPipe,
     AppNavigationRouterlinkComponent,
     AppNavBarComponent,
+    AppEmployeesComponent,
   
   ],
   imports: [
