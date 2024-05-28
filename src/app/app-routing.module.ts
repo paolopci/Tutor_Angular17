@@ -30,6 +30,7 @@ import { AppCustomPipeComponent } from './Cap07/app-custom-pipe/app-custom-pipe.
 import { AppSortNumberComponent } from './Cap07/app-sort-number/app-sort-number.component';
 import { AppLetterCountComponent } from './Cap07/app-letter-count/app-letter-count.component';
 import { AppIncrementCountComponent } from './Cap07/app-increment-count/app-increment-count.component';
+import { AppNavigationRouterlinkComponent } from './Cap08/app-navigation-routerlink/app-navigation-routerlink.component';
 
 
 const routes: Routes = [
@@ -62,6 +63,7 @@ const routes: Routes = [
   { path: 'sortn', component: AppSortNumberComponent },
   { path: 'letterc', component: AppLetterCountComponent },
   { path: 'increment', component: AppIncrementCountComponent },
+  { path: 'navlink', component: AppNavigationRouterlinkComponent },
 
 ];
 

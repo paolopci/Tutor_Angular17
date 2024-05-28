@@ -47,6 +47,8 @@ import { LetterCountPipe } from './Cap07/pipes/letter-count.pipe';
 import { IncrementCountPipe } from './Cap07/pipes/increment-count.pipe';
 import { AppIncrementCountComponent } from './Cap07/app-increment-count/app-increment-count.component';
 import { SumOfNumbersPipe } from './Cap07/pipes/sum-of-numbers.pipe';
+import { AppNavigationRouterlinkComponent } from './Cap08/app-navigation-routerlink/app-navigation-routerlink.component';
+import { AppNavBarComponent } from './Cap08/app-nav-bar/app-nav-bar.component';
 
 
 @NgModule({
@@ -95,6 +97,8 @@ import { SumOfNumbersPipe } from './Cap07/pipes/sum-of-numbers.pipe';
     IncrementCountPipe,
     AppIncrementCountComponent,
     SumOfNumbersPipe,
+    AppNavigationRouterlinkComponent,
+    AppNavBarComponent,
   
   ],
   imports: [
