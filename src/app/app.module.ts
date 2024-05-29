@@ -70,6 +70,8 @@ import { AppHomeModuleComponent } from './Cap08/app-home-module/app-home-module.
 import { AppUserModuleComponent } from './Cap08/app-user-module/app-user-module.component';
 import { AppEmployeeComponent } from './Cap08/app-employee/app-employee.component';
 import { AppHomeEmployeeComponent } from './Cap08/app-home-employee/app-home-employee.component';
+import { CourseDetailComponent } from './Cap08/course-detail/course-detail.component';
+import { CourseHomeComponent } from './Cap08/course-home/course-home.component';
 
 
 
@@ -136,7 +138,7 @@ import { AppHomeEmployeeComponent } from './Cap08/app-home-employee/app-home-emp
     AppProductDettaglioOneComponent,
     AppProductDettaglioTwoComponent,
     AppProductDettaglioThreeComponent,
-    AppHomeModuleComponent,AppUserModuleComponent, AppEmployeeComponent, AppHomeEmployeeComponent
+    AppHomeModuleComponent,AppUserModuleComponent, AppEmployeeComponent, AppHomeEmployeeComponent, CourseDetailComponent, CourseHomeComponent
 
   ],
   imports: [

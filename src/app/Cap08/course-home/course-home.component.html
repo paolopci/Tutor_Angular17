@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Courses</h1>
+    <div class="row">
+        <ul>
+            <li class="col"><a href=# [routerLink]="['/courseDetail']"
+                    [queryParams]="{id:'1',name:'HTML, CSS, Sass, Bootstrap - Beginner to Expert + Bootcamp'}">
+                    HTML, CSS, Sass, Bootstrap - Beginner to Expert + Bootcamp</a>
+            </li>
+            <li class="col">
+                <a href="#" [routerLink]="['/courseDetail']"
+                    [queryParams]="{id: '2', name: 'JavaScript Marathon Interview Questions Series'}">
+                    JavaScript Marathon Interview Questions Series
+                </a>
+            </li>
+            <li class="col">
+                <a href="#" [routerLink]="['/courseDetail']"
+                    [queryParams]="{id: '3', name: 'Mastering TypeScript with Marathon Interview Questions'}">Mastering
+                    TypeScript with Marathon Interview Questions
+                </a>
+            </li>
+            <li class="col">
+                <a href="#" [routerLink]="['/courseDetail']"
+                    [queryParams]="{id: '4', name: 'Mastering React With Interview Questions,eStore Project'}">Mastering
+                    React With Interview Questions,eStore Project
+                </a>
+            </li>
+            <li class="col">
+                <a href="#" [routerLink]="['/courseDetail']"
+                    [queryParams]="{id: '5', name: 'Practical Database Guide with RDBMS(MySQL) & NoSQL(MongoDB)'}">Practical
+                    Database Guide with RDBMS(MySQL) & NoSQL(MongoDB)
+                </a>
+            </li>
+        </ul>
+    </div>
+    <hr class="hrDesign"/>
+    <router-outlet></router-outlet>
+
+</body>
+
+</html>
