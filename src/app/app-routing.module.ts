@@ -84,6 +84,7 @@ const routes: Routes = [
   { path: 'homer', component: AppHomeModuleComponent },
   { path: 'emplo/:empName/:empId', component: AppEmployeesComponent },
   { path: 'employee/:id/:name', component: AppEmployeeComponent },
+  { path: 'employee', component: AppEmployeeComponent },
   { path: 'emplohome', component: AppHomeEmployeeComponent },
 
   {
