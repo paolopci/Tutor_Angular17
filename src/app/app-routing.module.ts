@@ -43,6 +43,8 @@ import { AppProductDettaglioOneComponent } from './Cap08/app-menu-multi-lev/app-
 import { AppProductDettaglioTwoComponent } from './Cap08/app-menu-multi-lev/app-product-dettaglio-two.component';
 import { AppProductDettaglioThreeComponent } from './Cap08/app-menu-multi-lev/app-product-dettaglio-three.component';
 import { AppHomeModuleComponent } from './Cap08/app-home-module/app-home-module.component';
+import { AppEmployeeComponent } from './Cap08/app-employee/app-employee.component';
+import { AppHomeEmployeeComponent } from './Cap08/app-home-employee/app-home-employee.component';
 
 
 
@@ -81,6 +83,9 @@ const routes: Routes = [
   { path: 'navlink', component: AppNavigationRouterlinkComponent },
   { path: 'homer', component: AppHomeModuleComponent },
   { path: 'emplo/:empName/:empId', component: AppEmployeesComponent },
+  { path: 'employee/:id/:name', component: AppEmployeeComponent },
+  { path: 'emplohome', component: AppHomeEmployeeComponent },
+
   {
     path: 'parent', component: AppParentRouteComponent, children: [
       { path: 'child1', component: AppChildRoute01Component },

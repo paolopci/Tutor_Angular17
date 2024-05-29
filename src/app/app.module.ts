@@ -68,6 +68,8 @@ import { AppProductDettaglioThreeComponent } from './Cap08/app-menu-multi-lev/ap
 import { AdminModule } from './admin/admin.module';
 import { AppHomeModuleComponent } from './Cap08/app-home-module/app-home-module.component';
 import { AppUserModuleComponent } from './Cap08/app-user-module/app-user-module.component';
+import { AppEmployeeComponent } from './Cap08/app-employee/app-employee.component';
+import { AppHomeEmployeeComponent } from './Cap08/app-home-employee/app-home-employee.component';
 
 
 
@@ -134,7 +136,7 @@ import { AppUserModuleComponent } from './Cap08/app-user-module/app-user-module.
     AppProductDettaglioOneComponent,
     AppProductDettaglioTwoComponent,
     AppProductDettaglioThreeComponent,
-    AppHomeModuleComponent,AppUserModuleComponent
+    AppHomeModuleComponent,AppUserModuleComponent, AppEmployeeComponent, AppHomeEmployeeComponent
 
   ],
   imports: [
