@@ -47,6 +47,7 @@ import { AppEmployeeComponent } from './Cap08/app-employee/app-employee.componen
 import { AppHomeEmployeeComponent } from './Cap08/app-home-employee/app-home-employee.component';
 import { CourseDetailComponent } from './Cap08/course-detail/course-detail.component';
 import { CourseHomeComponent } from './Cap08/course-home/course-home.component';
+import { EmployeeHomeComponent } from './Cap09/employee-home/employee-home.component';
 
 
 
@@ -90,6 +91,7 @@ const routes: Routes = [
   { path: 'emplohome', component: AppHomeEmployeeComponent },
   { path: 'courseDetail', component: CourseDetailComponent },
   { path: 'courseHome', component: CourseHomeComponent },
+  { path: 'empHome', component: EmployeeHomeComponent },
 
   {
     path: 'parent', component: AppParentRouteComponent, children: [
