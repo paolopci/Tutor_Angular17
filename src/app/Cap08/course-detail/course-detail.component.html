@@ -1,0 +1,13 @@
+<h2>{{name}}</h2>
+<div class="container">
+    <div class="card">
+        <h5 class="card-header">What you'll learn...</h5>
+        <div class="card-body">
+            <h5 class="card-title">{{desc | titlecase }}</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <img [src]="img" alt="{{name}}">
+            <p class="price"><strong>Price: </strong>{{price | currency: 'EUR'}}</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>

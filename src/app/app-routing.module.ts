@@ -30,9 +30,29 @@ import { AppCustomPipeComponent } from './Cap07/app-custom-pipe/app-custom-pipe.
 import { AppSortNumberComponent } from './Cap07/app-sort-number/app-sort-number.component';
 import { AppLetterCountComponent } from './Cap07/app-letter-count/app-letter-count.component';
 import { AppIncrementCountComponent } from './Cap07/app-increment-count/app-increment-count.component';
+import { AppNavigationRouterlinkComponent } from './Cap08/app-navigation-routerlink/app-navigation-routerlink.component';
+import { AppEmployeesComponent } from './Cap08/app-employees/app-employees.component';
+import { PageNotFoundComponent } from './Cap08/page-not-found/page-not-found.component';
+import { AppParentRouteComponent } from './Cap08/app-parent-route/app-parent-route.component';
+import { AppChildRoute01Component } from './Cap08/app-child-route01/app-child-route01.component';
+import { AppChildRoute02Component } from './Cap08/app-child-route02/app-child-route02.component';
+import { AppRootPageComponent } from './Cap03/app-root-page/app-root-page.component';
+import { AppMenuMultiLevComponent } from './Cap08/app-menu-multi-lev/app-menu-multi-lev.component';
+import { AppProductsComponent } from './Cap08/app-menu-multi-lev/app-products.component';
+import { AppProductDettaglioOneComponent } from './Cap08/app-menu-multi-lev/app-product-dettaglio-one.component';
+import { AppProductDettaglioTwoComponent } from './Cap08/app-menu-multi-lev/app-product-dettaglio-two.component';
+import { AppProductDettaglioThreeComponent } from './Cap08/app-menu-multi-lev/app-product-dettaglio-three.component';
+import { AppHomeModuleComponent } from './Cap08/app-home-module/app-home-module.component';
+import { AppEmployeeComponent } from './Cap08/app-employee/app-employee.component';
+import { AppHomeEmployeeComponent } from './Cap08/app-home-employee/app-home-employee.component';
+import { CourseDetailComponent } from './Cap08/course-detail/course-detail.component';
+import { CourseHomeComponent } from './Cap08/course-home/course-home.component';
+
+
 
 
 const routes: Routes = [
+  { path: 'home', component: AppRootPageComponent },
   { path: 'switch', component: SwitchComponent },
   { path: 'dark', component: DarkModeComponent },
   { path: 'style', component: Style13Component },
@@ -62,7 +82,33 @@ const routes: Routes = [
   { path: 'sortn', component: AppSortNumberComponent },
   { path: 'letterc', component: AppLetterCountComponent },
   { path: 'increment', component: AppIncrementCountComponent },
+  { path: 'navlink', component: AppNavigationRouterlinkComponent },
+  { path: 'homer', component: AppHomeModuleComponent },
+  { path: 'emplo/:empName/:empId', component: AppEmployeesComponent },
+  { path: 'employee/:id/:name', component: AppEmployeeComponent },
+  { path: 'employee', component: AppEmployeeComponent },
+  { path: 'emplohome', component: AppHomeEmployeeComponent },
+  { path: 'courseDetail', component: CourseDetailComponent },
+  { path: 'courseHome', component: CourseHomeComponent },
 
+  {
+    path: 'parent', component: AppParentRouteComponent, children: [
+      { path: 'child1', component: AppChildRoute01Component },
+      { path: 'child2', component: AppChildRoute02Component }
+    ]
+  },
+  { path: 'menulev', component: AppMenuMultiLevComponent },
+  {  // Menu multilivello
+    path: 'products', component: AppProductsComponent, children: [
+      { path: 'prod03', redirectTo: 'prod01', pathMatch: 'prefix' },
+      { path: 'prod01', component: AppProductDettaglioOneComponent },
+      { path: 'prod02', component: AppProductDettaglioTwoComponent },
+      { path: 'prod03', component: AppProductDettaglioThreeComponent },
+    ]
+  },
+
+   //{ path: '**', component: PageNotFoundComponent },
+//  { path: '**', redirectTo: 'home', pathMatch: 'full' },
 ];
 
 @NgModule({

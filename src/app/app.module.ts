@@ -47,6 +47,34 @@ import { LetterCountPipe } from './Cap07/pipes/letter-count.pipe';
 import { IncrementCountPipe } from './Cap07/pipes/increment-count.pipe';
 import { AppIncrementCountComponent } from './Cap07/app-increment-count/app-increment-count.component';
 import { SumOfNumbersPipe } from './Cap07/pipes/sum-of-numbers.pipe';
+import { AppNavigationRouterlinkComponent } from './Cap08/app-navigation-routerlink/app-navigation-routerlink.component';
+import { AppNavBarComponent } from './Cap08/app-nav-bar/app-nav-bar.component';
+import { AppEmployeesComponent } from './Cap08/app-employees/app-employees.component';
+import { PageNotFoundComponent } from './Cap08/page-not-found/page-not-found.component';
+import { AppParentRouteComponent } from './Cap08/app-parent-route/app-parent-route.component';
+import { AppChildRoute01Component } from './Cap08/app-child-route01/app-child-route01.component';
+import { AppChildRoute02Component } from './Cap08/app-child-route02/app-child-route02.component';
+import { AppRootPageComponent } from './Cap03/app-root-page/app-root-page.component';
+import { AppMenuMultiLevComponent } from './Cap08/app-menu-multi-lev/app-menu-multi-lev.component';
+import { AppProductsComponent } from './Cap08/app-menu-multi-lev/app-products.component';
+import { AppAboutComponent } from './Cap08/app-menu-multi-lev/app-about.component';
+import { AppContactComponent } from './Cap08/app-menu-multi-lev/app-contact.component';
+import { AppProductDettaglioOneComponent } from './Cap08/app-menu-multi-lev/app-product-dettaglio-one.component';
+import { AppProductDettaglioTwoComponent } from './Cap08/app-menu-multi-lev/app-product-dettaglio-two.component';
+import { AppProductDettaglioThreeComponent } from './Cap08/app-menu-multi-lev/app-product-dettaglio-three.component';
+
+
+// import il routing module che ho creato x forChild
+import { AdminModule } from './admin/admin.module';
+import { AppHomeModuleComponent } from './Cap08/app-home-module/app-home-module.component';
+import { AppUserModuleComponent } from './Cap08/app-user-module/app-user-module.component';
+import { AppEmployeeComponent } from './Cap08/app-employee/app-employee.component';
+import { AppHomeEmployeeComponent } from './Cap08/app-home-employee/app-home-employee.component';
+import { CourseDetailComponent } from './Cap08/course-detail/course-detail.component';
+import { CourseHomeComponent } from './Cap08/course-home/course-home.component';
+
+
+
 
 
 @NgModule({
@@ -95,12 +123,29 @@ import { SumOfNumbersPipe } from './Cap07/pipes/sum-of-numbers.pipe';
     IncrementCountPipe,
     AppIncrementCountComponent,
     SumOfNumbersPipe,
-  
+    AppNavigationRouterlinkComponent,
+    AppNavBarComponent,
+    AppEmployeesComponent,
+    PageNotFoundComponent,
+    AppParentRouteComponent,
+    AppChildRoute01Component,
+    AppChildRoute02Component,
+    AppRootPageComponent,
+    AppMenuMultiLevComponent,
+    AppProductsComponent,
+    AppAboutComponent,
+    AppContactComponent,
+    AppProductDettaglioOneComponent,
+    AppProductDettaglioTwoComponent,
+    AppProductDettaglioThreeComponent,
+    AppHomeModuleComponent,AppUserModuleComponent, AppEmployeeComponent, AppHomeEmployeeComponent, CourseDetailComponent, CourseHomeComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AdminModule,  // import il routing module che ho creato per forChild
   ],
   providers: [
     provideClientHydration()

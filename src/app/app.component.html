@@ -1,15 +1,15 @@
 <div class="">
-  <div class="col" style="background-color: yellow;height: 60px;"></div>
+  <div class="col">
+    <app-nav-bar></app-nav-bar>
+  </div>
   <div class="row">
-    <div class="col-3" style="background-color: green;height: 800px;">
+    <div class="col-3" style="background-color: green;height: 100%;">
       <app-carousel></app-carousel>
     </div>
     <div class="col-9">
-      <router-outlet></router-outlet>
-
-      <!-- <h2>App Component (root)</h2>
-      <button #btnIncr class="btn btn-primary" (click)="incrementChildCounter()">Increment Counter</button>
-      <app-child-view-child></app-child-view-child> -->
+      <router-outlet>
+        <!-- <a class="btn btn-dark" routerLink="/buildp">Partial Child</a> -->
+      </router-outlet>
     </div>
   </div>
 </div>

@@ -1,0 +1,22 @@
+<div class="container">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of employees; track $index) {
+            <tr>
+                <td>{{item.empId}}</td>
+                <td>{{item.empName}}</td>
+                <td><a href="#" [routerLink]="['/emplo',item.empName,item.empId]">{{item.empDept}}</a></td>
+            </tr>
+            }@empty {
+            <p>'Non ci sono employees'</p>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    color: goldenrod;
+    font-size: 32px;
+    letter-spacing: 0.1em;
+  }
+  
+  .parent-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  .descContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 20px;
+  }
+  .descTitle {
+    margin: 25px;
+    font-size: 35px;
+  }
+  
+  .description {
+    margin: 25px;
+    margin-top: 8px;
+    margin-left: 60px;
+    font-size: 18px;
+  }
+  .imgContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 15px;
+  }
+  img {
+    width: 65%;
+    margin: 25px;
+    max-width: 500px;
+    height: auto;
+    box-shadow: #ffffff60 0px 20px 30px -10px;
+    margin-left: auto;
+  }
+  p{
+      color: goldenrod;
+  }
+  .price {
+    margin: 5px 120px 0 0;
+    font-size: 25px;
+    color: goldenrod;
+  }
+  
+  @media (max-width: 768px) {
+    img {
+      max-width: 400px;
+    }
+  }
+  
