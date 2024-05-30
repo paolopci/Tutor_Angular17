@@ -81,6 +81,7 @@ import { AppCompTokenComponent } from './Cap010/app-comp-token/app-comp-token.co
 import { LogMessage1Service } from './Cap010/services/log-message1.service';
 import { LogMessage2Service } from './Cap010/services/log-message2.service';
 import { AppTokenObjectComponent } from './Cap010/app-token-object/app-token-object.component';
+import { AppTokenUsevalueComponent } from './Cap010/app-token-usevalue/app-token-usevalue.component';
 
 
 
@@ -153,7 +154,7 @@ import { AppTokenObjectComponent } from './Cap010/app-token-object/app-token-obj
     AppHomeEmployeeComponent,
     CourseDetailComponent,
     CourseHomeComponent,
-    EmployeeHomeComponent, AppCompTokenComponent, AppTokenObjectComponent
+    EmployeeHomeComponent, AppCompTokenComponent, AppTokenObjectComponent, AppTokenUsevalueComponent
   ],
   imports: [
     BrowserModule,
@@ -168,7 +169,10 @@ import { AppTokenObjectComponent } from './Cap010/app-token-object/app-token-obj
     // che non viene mai usato.
     // { provide: LogMessage1Service, useClass: LogMessage1Service },
     // { provide: LogMessage1Service, useClass: LogMessage2Service },
-    { provide: 'LOG_MSG1', useClass: LogMessage1Service }
+    { provide: 'LOG_MSG1', useClass: LogMessage1Service },
+    // fornisco un valore al token (STR_MSG) di tipo stringa `This is the string message`
+    { provide: 'STR_MSG', useValue: 'This is the string message' }
+
   ],
   bootstrap: [AppComponent]
 })
