@@ -163,8 +163,11 @@ import { LogMessage2Service } from './Cap010/services/log-message2.service';
   providers: [
     // provideClientHydration(),
     EmployeeService,
-    { provide: LogMessage1Service, useClass: LogMessage1Service },
-    { provide: LogMessage1Service, useClass: LogMessage2Service },
+    // esempio di Type Token , in questo caso l'ultimo sorascrive il precedente,
+    // che non viene mai usato.
+    // { provide: LogMessage1Service, useClass: LogMessage1Service },
+    // { provide: LogMessage1Service, useClass: LogMessage2Service },
+    { provide: 'LOG_MSG1', useClass: LogMessage1Service }
   ],
   bootstrap: [AppComponent]
 })
