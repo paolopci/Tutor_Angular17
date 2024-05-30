@@ -77,6 +77,9 @@ import { EmployeeHomeComponent } from './Cap09/employee-home/employee-home.compo
 
 // Services
 import { EmployeeService } from './Cap09/dependecies/employee.service';
+import { AppCompTokenComponent } from './Cap010/app-comp-token/app-comp-token.component';
+import { LogMessage1Service } from './Cap010/services/log-message1.service';
+import { LogMessage2Service } from './Cap010/services/log-message2.service';
 
 
 
@@ -144,12 +147,12 @@ import { EmployeeService } from './Cap09/dependecies/employee.service';
     AppProductDettaglioTwoComponent,
     AppProductDettaglioThreeComponent,
     AppHomeModuleComponent,
-    AppUserModuleComponent, 
-    AppEmployeeComponent, 
-    AppHomeEmployeeComponent, 
-    CourseDetailComponent, 
-    CourseHomeComponent, 
-    EmployeeHomeComponent
+    AppUserModuleComponent,
+    AppEmployeeComponent,
+    AppHomeEmployeeComponent,
+    CourseDetailComponent,
+    CourseHomeComponent,
+    EmployeeHomeComponent, AppCompTokenComponent
   ],
   imports: [
     BrowserModule,
@@ -158,8 +161,10 @@ import { EmployeeService } from './Cap09/dependecies/employee.service';
     AdminModule,  // import il routing module che ho creato per forChild
   ],
   providers: [
-   // provideClientHydration(),
-    EmployeeService
+    // provideClientHydration(),
+    EmployeeService,
+    { provide: LogMessage1Service, useClass: LogMessage1Service },
+    { provide: LogMessage1Service, useClass: LogMessage2Service },
   ],
   bootstrap: [AppComponent]
 })

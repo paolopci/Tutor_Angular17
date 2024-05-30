@@ -49,6 +49,7 @@ import { CourseDetailComponent } from './Cap08/course-detail/course-detail.compo
 import { CourseHomeComponent } from './Cap08/course-home/course-home.component';
 import { EmployeeHomeComponent } from './Cap09/employee-home/employee-home.component';
 import { MyComponentComponent } from './Cap09/my-component/my-component.component';
+import { AppCompTokenComponent } from './Cap010/app-comp-token/app-comp-token.component';
 
 
 
@@ -94,6 +95,7 @@ const routes: Routes = [
   { path: 'courseHome', component: CourseHomeComponent },
   { path: 'empHome', component: EmployeeHomeComponent },
   { path: 'myHoc', component: MyComponentComponent },
+  { path: 'myTok', component: AppCompTokenComponent },
 
   {
     path: 'parent', component: AppParentRouteComponent, children: [
