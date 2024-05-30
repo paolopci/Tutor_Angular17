@@ -80,6 +80,7 @@ import { EmployeeService } from './Cap09/dependecies/employee.service';
 import { AppCompTokenComponent } from './Cap010/app-comp-token/app-comp-token.component';
 import { LogMessage1Service } from './Cap010/services/log-message1.service';
 import { LogMessage2Service } from './Cap010/services/log-message2.service';
+import { AppTokenObjectComponent } from './Cap010/app-token-object/app-token-object.component';
 
 
 
@@ -152,7 +153,7 @@ import { LogMessage2Service } from './Cap010/services/log-message2.service';
     AppHomeEmployeeComponent,
     CourseDetailComponent,
     CourseHomeComponent,
-    EmployeeHomeComponent, AppCompTokenComponent
+    EmployeeHomeComponent, AppCompTokenComponent, AppTokenObjectComponent
   ],
   imports: [
     BrowserModule,
