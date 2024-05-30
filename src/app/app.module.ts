@@ -72,6 +72,11 @@ import { AppEmployeeComponent } from './Cap08/app-employee/app-employee.componen
 import { AppHomeEmployeeComponent } from './Cap08/app-home-employee/app-home-employee.component';
 import { CourseDetailComponent } from './Cap08/course-detail/course-detail.component';
 import { CourseHomeComponent } from './Cap08/course-home/course-home.component';
+import { EmployeeHomeComponent } from './Cap09/employee-home/employee-home.component';
+
+
+// Services
+import { EmployeeService } from './Cap09/dependecies/employee.service';
 
 
 
@@ -138,8 +143,13 @@ import { CourseHomeComponent } from './Cap08/course-home/course-home.component';
     AppProductDettaglioOneComponent,
     AppProductDettaglioTwoComponent,
     AppProductDettaglioThreeComponent,
-    AppHomeModuleComponent,AppUserModuleComponent, AppEmployeeComponent, AppHomeEmployeeComponent, CourseDetailComponent, CourseHomeComponent
-
+    AppHomeModuleComponent,
+    AppUserModuleComponent, 
+    AppEmployeeComponent, 
+    AppHomeEmployeeComponent, 
+    CourseDetailComponent, 
+    CourseHomeComponent, 
+    EmployeeHomeComponent
   ],
   imports: [
     BrowserModule,
@@ -148,7 +158,8 @@ import { CourseHomeComponent } from './Cap08/course-home/course-home.component';
     AdminModule,  // import il routing module che ho creato per forChild
   ],
   providers: [
-    provideClientHydration()
+   // provideClientHydration(),
+    EmployeeService
   ],
   bootstrap: [AppComponent]
 })
