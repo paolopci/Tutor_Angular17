@@ -82,6 +82,9 @@ import { LogMessage1Service } from './Cap010/services/log-message1.service';
 import { LogMessage2Service } from './Cap010/services/log-message2.service';
 import { AppTokenObjectComponent } from './Cap010/app-token-object/app-token-object.component';
 import { AppTokenUsevalueComponent } from './Cap010/app-token-usevalue/app-token-usevalue.component';
+import { AppAdminComponent } from './Cap010/app-admin/app-admin.component';
+import { ADMIN_DATA } from './Cap010/ADMIN_DATA/admin-data';
+import { AdminDataService } from './Cap010/services/admin-data.service';
 
 
 
@@ -154,7 +157,7 @@ import { AppTokenUsevalueComponent } from './Cap010/app-token-usevalue/app-token
     AppHomeEmployeeComponent,
     CourseDetailComponent,
     CourseHomeComponent,
-    EmployeeHomeComponent, AppCompTokenComponent, AppTokenObjectComponent, AppTokenUsevalueComponent
+    EmployeeHomeComponent, AppCompTokenComponent, AppTokenObjectComponent, AppTokenUsevalueComponent, AppAdminComponent
   ],
   imports: [
     BrowserModule,
@@ -171,7 +174,10 @@ import { AppTokenUsevalueComponent } from './Cap010/app-token-usevalue/app-token
     // { provide: LogMessage1Service, useClass: LogMessage2Service },
     { provide: 'LOG_MSG1', useClass: LogMessage1Service },
     // fornisco un valore al token (STR_MSG) di tipo stringa `This is the string message`
-    { provide: 'STR_MSG', useValue: 'This is the string message' }
+    { provide: 'STR_MSG', useValue: 'This is the string message' },
+    // fornisco un valore costante alla dependecy
+    AdminDataService,
+    { provide: ADMIN_DATA, useValue: ADMIN_DATA }
 
   ],
   bootstrap: [AppComponent]

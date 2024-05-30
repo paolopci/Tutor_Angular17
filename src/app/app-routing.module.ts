@@ -51,6 +51,7 @@ import { EmployeeHomeComponent } from './Cap09/employee-home/employee-home.compo
 import { MyComponentComponent } from './Cap09/my-component/my-component.component';
 import { AppCompTokenComponent } from './Cap010/app-comp-token/app-comp-token.component';
 import { AppTokenUsevalueComponent } from './Cap010/app-token-usevalue/app-token-usevalue.component';
+import { AppAdminComponent } from './Cap010/app-admin/app-admin.component';
 
 
 
@@ -98,6 +99,7 @@ const routes: Routes = [
   { path: 'myHoc', component: MyComponentComponent },
   { path: 'myTok', component: AppCompTokenComponent },
   { path: 'myuseValue', component: AppTokenUsevalueComponent },
+  { path: 'appAdmin', component: AppAdminComponent },
 
   {
     path: 'parent', component: AppParentRouteComponent, children: [
