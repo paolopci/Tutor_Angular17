@@ -52,6 +52,8 @@ import { MyComponentComponent } from './Cap09/my-component/my-component.componen
 import { AppCompTokenComponent } from './Cap010/app-comp-token/app-comp-token.component';
 import { AppTokenUsevalueComponent } from './Cap010/app-token-usevalue/app-token-usevalue.component';
 import { AppAdminComponent } from './Cap010/app-admin/app-admin.component';
+import { AlertMsgComponent } from './Cap010/alert-msg/alert-msg.component';
+import { UseFactoryHomeComponent } from './Cap010/use-factory-home/use-factory-home.component';
 
 
 
@@ -100,6 +102,9 @@ const routes: Routes = [
   { path: 'myTok', component: AppCompTokenComponent },
   { path: 'myuseValue', component: AppTokenUsevalueComponent },
   { path: 'appAdmin', component: AppAdminComponent },
+  { path: 'appAlert', component: AlertMsgComponent },
+  { path: 'useFactory', component: UseFactoryHomeComponent },
+
 
   {
     path: 'parent', component: AppParentRouteComponent, children: [

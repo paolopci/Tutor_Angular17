@@ -85,6 +85,11 @@ import { AppTokenUsevalueComponent } from './Cap010/app-token-usevalue/app-token
 import { AppAdminComponent } from './Cap010/app-admin/app-admin.component';
 import { ADMIN_DATA } from './Cap010/ADMIN_DATA/admin-data';
 import { AdminDataService } from './Cap010/services/admin-data.service';
+import { AlertMessage1Service } from './Cap010/services/alert-message1.service';
+import { AlertMessage2Service } from './Cap010/services/alert-message2.service';
+import { AlertMsgComponent } from './Cap010/alert-msg/alert-msg.component';
+import { UseFactoryHomeComponent } from './Cap010/use-factory-home/use-factory-home.component';
+import { MessageService } from './Cap010/services/message.service';
 
 
 
@@ -157,7 +162,7 @@ import { AdminDataService } from './Cap010/services/admin-data.service';
     AppHomeEmployeeComponent,
     CourseDetailComponent,
     CourseHomeComponent,
-    EmployeeHomeComponent, AppCompTokenComponent, AppTokenObjectComponent, AppTokenUsevalueComponent, AppAdminComponent
+    EmployeeHomeComponent, AppCompTokenComponent, AppTokenObjectComponent, AppTokenUsevalueComponent, AppAdminComponent, AlertMsgComponent, UseFactoryHomeComponent
   ],
   imports: [
     BrowserModule,
@@ -177,7 +182,18 @@ import { AdminDataService } from './Cap010/services/admin-data.service';
     { provide: 'STR_MSG', useValue: 'This is the string message' },
     // fornisco un valore costante alla dependecy
     AdminDataService,
-    { provide: ADMIN_DATA, useValue: ADMIN_DATA }
+    { provide: ADMIN_DATA, useValue: ADMIN_DATA },
+    AlertMessage1Service,
+    {
+      provide: AlertMessage2Service, useExisting: AlertMessage1Service
+    },
+    // AlertMessage2Service,
+    // {
+    //   provide: AlertMessage1Service, useExisting: AlertMessage2Service
+    // },
+    {
+      provide:MessageService, useFactory:()=>{ return new MessageService();}
+    }
 
   ],
   bootstrap: [AppComponent]
