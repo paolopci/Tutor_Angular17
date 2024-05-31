@@ -56,6 +56,7 @@ import { AlertMsgComponent } from './Cap010/alert-msg/alert-msg.component';
 import { UseFactoryHomeComponent } from './Cap010/use-factory-home/use-factory-home.component';
 import { FactoryUsuseValueComponent } from './Cap010/factory-ususe-value/factory-ususe-value.component';
 import { AppformComponent } from './Cap11/appform/appform.component';
+import { AppSubmitComponent } from './Cap11/app-submit/app-submit.component';
 
 
 
@@ -108,6 +109,7 @@ const routes: Routes = [
   { path: 'useFactory', component: UseFactoryHomeComponent },
   { path: 'usefac', component: FactoryUsuseValueComponent },
   { path: 'appform11', component: AppformComponent },
+  { path: 'appSubm', component: AppSubmitComponent },
 
 
   {
