@@ -57,6 +57,7 @@ import { UseFactoryHomeComponent } from './Cap010/use-factory-home/use-factory-h
 import { FactoryUsuseValueComponent } from './Cap010/factory-ususe-value/factory-ususe-value.component';
 import { AppformComponent } from './Cap11/appform/appform.component';
 import { AppSubmitComponent } from './Cap11/app-submit/app-submit.component';
+import { AppTemplatedrivenComponent } from './Cap11/app-templatedriven/app-templatedriven.component';
 
 
 
@@ -110,6 +111,7 @@ const routes: Routes = [
   { path: 'usefac', component: FactoryUsuseValueComponent },
   { path: 'appform11', component: AppformComponent },
   { path: 'appSubm', component: AppSubmitComponent },
+  { path: 'appTmpdriven', component: AppTemplatedrivenComponent },
 
 
   {
