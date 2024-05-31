@@ -93,6 +93,8 @@ import { MessageService } from './Cap010/services/message.service';
 import { AppConfigService } from './Cap010/services/app-config.service';
 import { AppUpdateService } from './Cap010/services/app-update.service';
 import { FactoryUsuseValueComponent } from './Cap010/factory-ususe-value/factory-ususe-value.component';
+import { FormsCap11Module } from './Cap11/forms-cap11.module'; // module cap11
+
 
 
 export function showGreetingMessage(): string {
@@ -176,13 +178,21 @@ export function showGreetingMessage(): string {
     AppHomeEmployeeComponent,
     CourseDetailComponent,
     CourseHomeComponent,
-    EmployeeHomeComponent, AppCompTokenComponent, AppTokenObjectComponent, AppTokenUsevalueComponent, AppAdminComponent, AlertMsgComponent, UseFactoryHomeComponent, FactoryUsuseValueComponent
+    EmployeeHomeComponent,
+    AppCompTokenComponent,
+    AppTokenObjectComponent,
+    AppTokenUsevalueComponent,
+    AppAdminComponent,
+    AlertMsgComponent,
+    UseFactoryHomeComponent,
+    FactoryUsuseValueComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     AdminModule,  // import il routing module che ho creato per forChild
+    FormsCap11Module
   ],
   providers: [
     // provideClientHydration(),
