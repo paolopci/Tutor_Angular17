@@ -49,6 +49,12 @@ import { CourseDetailComponent } from './Cap08/course-detail/course-detail.compo
 import { CourseHomeComponent } from './Cap08/course-home/course-home.component';
 import { EmployeeHomeComponent } from './Cap09/employee-home/employee-home.component';
 import { MyComponentComponent } from './Cap09/my-component/my-component.component';
+import { AppCompTokenComponent } from './Cap010/app-comp-token/app-comp-token.component';
+import { AppTokenUsevalueComponent } from './Cap010/app-token-usevalue/app-token-usevalue.component';
+import { AppAdminComponent } from './Cap010/app-admin/app-admin.component';
+import { AlertMsgComponent } from './Cap010/alert-msg/alert-msg.component';
+import { UseFactoryHomeComponent } from './Cap010/use-factory-home/use-factory-home.component';
+import { FactoryUsuseValueComponent } from './Cap010/factory-ususe-value/factory-ususe-value.component';
 
 
 
@@ -94,6 +100,14 @@ const routes: Routes = [
   { path: 'courseHome', component: CourseHomeComponent },
   { path: 'empHome', component: EmployeeHomeComponent },
   { path: 'myHoc', component: MyComponentComponent },
+  { path: 'myTok', component: AppCompTokenComponent },
+  { path: 'myuseValue', component: AppTokenUsevalueComponent },
+  { path: 'appAdmin', component: AppAdminComponent },
+  { path: 'appAlert', component: AlertMsgComponent },
+  { path: 'useFactory', component: UseFactoryHomeComponent },
+  { path: 'usefac', component: FactoryUsuseValueComponent },
+
+
 
   {
     path: 'parent', component: AppParentRouteComponent, children: [

@@ -77,8 +77,35 @@ import { EmployeeHomeComponent } from './Cap09/employee-home/employee-home.compo
 
 // Services
 import { EmployeeService } from './Cap09/dependecies/employee.service';
+import { AppCompTokenComponent } from './Cap010/app-comp-token/app-comp-token.component';
+import { LogMessage1Service } from './Cap010/services/log-message1.service';
+import { LogMessage2Service } from './Cap010/services/log-message2.service';
+import { AppTokenObjectComponent } from './Cap010/app-token-object/app-token-object.component';
+import { AppTokenUsevalueComponent } from './Cap010/app-token-usevalue/app-token-usevalue.component';
+import { AppAdminComponent } from './Cap010/app-admin/app-admin.component';
+import { ADMIN_DATA } from './Cap010/ADMIN_DATA/admin-data';
+import { AdminDataService } from './Cap010/services/admin-data.service';
+import { AlertMessage1Service } from './Cap010/services/alert-message1.service';
+import { AlertMessage2Service } from './Cap010/services/alert-message2.service';
+import { AlertMsgComponent } from './Cap010/alert-msg/alert-msg.component';
+import { UseFactoryHomeComponent } from './Cap010/use-factory-home/use-factory-home.component';
+import { MessageService } from './Cap010/services/message.service';
+import { AppConfigService } from './Cap010/services/app-config.service';
+import { AppUpdateService } from './Cap010/services/app-update.service';
+import { FactoryUsuseValueComponent } from './Cap010/factory-ususe-value/factory-ususe-value.component';
 
 
+export function showGreetingMessage(): string {
+  const currentHour = new Date().getHours();
+  let greetingMessage: string = '';
+
+  if (currentHour > 0 && currentHour <= 12) {
+    greetingMessage = 'Buongiorno Paolo!';
+  } else {
+    greetingMessage = 'Buon pomeriggio Paolo!';
+  }
+  return greetingMessage;
+}
 
 
 
@@ -144,12 +171,12 @@ import { EmployeeService } from './Cap09/dependecies/employee.service';
     AppProductDettaglioTwoComponent,
     AppProductDettaglioThreeComponent,
     AppHomeModuleComponent,
-    AppUserModuleComponent, 
-    AppEmployeeComponent, 
-    AppHomeEmployeeComponent, 
-    CourseDetailComponent, 
-    CourseHomeComponent, 
-    EmployeeHomeComponent
+    AppUserModuleComponent,
+    AppEmployeeComponent,
+    AppHomeEmployeeComponent,
+    CourseDetailComponent,
+    CourseHomeComponent,
+    EmployeeHomeComponent, AppCompTokenComponent, AppTokenObjectComponent, AppTokenUsevalueComponent, AppAdminComponent, AlertMsgComponent, UseFactoryHomeComponent, FactoryUsuseValueComponent
   ],
   imports: [
     BrowserModule,
@@ -158,8 +185,52 @@ import { EmployeeService } from './Cap09/dependecies/employee.service';
     AdminModule,  // import il routing module che ho creato per forChild
   ],
   providers: [
-   // provideClientHydration(),
-    EmployeeService
+    // provideClientHydration(),
+    EmployeeService,
+    // esempio di Type Token , in questo caso l'ultimo sorascrive il precedente,
+    // che non viene mai usato.
+    // { provide: LogMessage1Service, useClass: LogMessage1Service },
+    // { provide: LogMessage1Service, useClass: LogMessage2Service },
+    { provide: 'LOG_MSG1', useClass: LogMessage1Service },
+    // fornisco un valore al token (STR_MSG) di tipo stringa `This is the string message`
+    { provide: 'STR_MSG', useValue: 'This is the string message' },
+    // fornisco un valore costante alla dependecy
+    AdminDataService,
+    { provide: ADMIN_DATA, useValue: ADMIN_DATA },
+    AlertMessage1Service,
+    {
+      provide: AlertMessage2Service, useExisting: AlertMessage1Service
+    },
+    // AlertMessage2Service,
+    // {
+    //   provide: AlertMessage1Service, useExisting: AlertMessage2Service
+    // },
+    {
+      provide: MessageService, useFactory: () => { return new MessageService(); }
+    },
+    // useFactory with deps
+    AppConfigService,
+    {
+      provide: AppUpdateService,
+      useFactory: (configService: AppConfigService) => {
+        const config = configService.getAppConfig();
+        return new AppUpdateService(config);
+      },
+      deps: [AppConfigService]
+    },
+    // esempio differenze tra useFactory & useValue 
+    // guarda la function che ho scritto alla riga 97
+    // export function showGreetingMessage(): .....
+    {
+      provide: 'GREETING_MESSAGE_FACTORY', // my Token in useFactory
+      useFactory: showGreetingMessage // ritorna un valore che è dinamico.
+    },
+    {
+      provide: 'GREETING_MESSAGE_VALUE', // my Token in useValue
+      useValue: 'Ciaooooooo'  // useValue ritorna un valore statico.
+    }
+
+
   ],
   bootstrap: [AppComponent]
 })
