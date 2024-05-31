@@ -92,8 +92,20 @@ import { UseFactoryHomeComponent } from './Cap010/use-factory-home/use-factory-h
 import { MessageService } from './Cap010/services/message.service';
 import { AppConfigService } from './Cap010/services/app-config.service';
 import { AppUpdateService } from './Cap010/services/app-update.service';
+import { FactoryUsuseValueComponent } from './Cap010/factory-ususe-value/factory-ususe-value.component';
 
 
+export function showGreetingMessage(): string {
+  const currentHour = new Date().getHours();
+  let greetingMessage: string = '';
+
+  if (currentHour > 0 && currentHour <= 12) {
+    greetingMessage = 'Buongiorno Paolo!';
+  } else {
+    greetingMessage = 'Buon pomeriggio Paolo!';
+  }
+  return greetingMessage;
+}
 
 
 
@@ -164,7 +176,7 @@ import { AppUpdateService } from './Cap010/services/app-update.service';
     AppHomeEmployeeComponent,
     CourseDetailComponent,
     CourseHomeComponent,
-    EmployeeHomeComponent, AppCompTokenComponent, AppTokenObjectComponent, AppTokenUsevalueComponent, AppAdminComponent, AlertMsgComponent, UseFactoryHomeComponent
+    EmployeeHomeComponent, AppCompTokenComponent, AppTokenObjectComponent, AppTokenUsevalueComponent, AppAdminComponent, AlertMsgComponent, UseFactoryHomeComponent, FactoryUsuseValueComponent
   ],
   imports: [
     BrowserModule,
@@ -205,6 +217,17 @@ import { AppUpdateService } from './Cap010/services/app-update.service';
         return new AppUpdateService(config);
       },
       deps: [AppConfigService]
+    },
+    // esempio differenze tra useFactory & useValue 
+    // guarda la function che ho scritto alla riga 97
+    // export function showGreetingMessage(): .....
+    {
+      provide: 'GREETING_MESSAGE_FACTORY', // my Token in useFactory
+      useFactory: showGreetingMessage // ritorna un valore che è dinamico.
+    },
+    {
+      provide: 'GREETING_MESSAGE_VALUE', // my Token in useValue
+      useValue: 'Ciaooooooo'  // useValue ritorna un valore statico.
     }
 
 

@@ -54,6 +54,7 @@ import { AppTokenUsevalueComponent } from './Cap010/app-token-usevalue/app-token
 import { AppAdminComponent } from './Cap010/app-admin/app-admin.component';
 import { AlertMsgComponent } from './Cap010/alert-msg/alert-msg.component';
 import { UseFactoryHomeComponent } from './Cap010/use-factory-home/use-factory-home.component';
+import { FactoryUsuseValueComponent } from './Cap010/factory-ususe-value/factory-ususe-value.component';
 
 
 
@@ -104,6 +105,8 @@ const routes: Routes = [
   { path: 'appAdmin', component: AppAdminComponent },
   { path: 'appAlert', component: AlertMsgComponent },
   { path: 'useFactory', component: UseFactoryHomeComponent },
+  { path: 'usefac', component: FactoryUsuseValueComponent },
+
 
 
   {
