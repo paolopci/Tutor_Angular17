@@ -90,6 +90,8 @@ import { AlertMessage2Service } from './Cap010/services/alert-message2.service';
 import { AlertMsgComponent } from './Cap010/alert-msg/alert-msg.component';
 import { UseFactoryHomeComponent } from './Cap010/use-factory-home/use-factory-home.component';
 import { MessageService } from './Cap010/services/message.service';
+import { AppConfigService } from './Cap010/services/app-config.service';
+import { AppUpdateService } from './Cap010/services/app-update.service';
 
 
 
@@ -192,8 +194,19 @@ import { MessageService } from './Cap010/services/message.service';
     //   provide: AlertMessage1Service, useExisting: AlertMessage2Service
     // },
     {
-      provide:MessageService, useFactory:()=>{ return new MessageService();}
+      provide: MessageService, useFactory: () => { return new MessageService(); }
+    },
+    // useFactory with deps
+    AppConfigService,
+    {
+      provide: AppUpdateService,
+      useFactory: (configService: AppConfigService) => {
+        const config = configService.getAppConfig();
+        return new AppUpdateService(config);
+      },
+      deps: [AppConfigService]
     }
+
 
   ],
   bootstrap: [AppComponent]

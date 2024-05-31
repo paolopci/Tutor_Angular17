@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MessageService } from '../services/message.service';
+import { AppUpdateService } from '../services/app-update.service';
 
 @Component({
   selector: 'app-use-factory-home',
@@ -8,9 +9,11 @@ import { MessageService } from '../services/message.service';
 })
 export class UseFactoryHomeComponent {
   msg: string = '';
+  message: string = '';
 
-  constructor(private service: MessageService) {
-    console.log( service.msg());
+  constructor(private service: MessageService, private appUpdateService: AppUpdateService) {
+    console.log(service.msg());
+    this.message = appUpdateService.getAppUpdate();
   }
 
   showmsg() {
