@@ -3,7 +3,7 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { SwitchComponent } from './switch/switch.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { DarkModeComponent } from './Cap03/dark-mode/dark-mode.component';
@@ -93,7 +93,8 @@ import { MessageService } from './Cap010/services/message.service';
 import { AppConfigService } from './Cap010/services/app-config.service';
 import { AppUpdateService } from './Cap010/services/app-update.service';
 import { FactoryUsuseValueComponent } from './Cap010/factory-ususe-value/factory-ususe-value.component';
-import { FormsCap11Module } from './Cap11/forms-cap11.module'; // module cap11
+import { FormsCap11Module } from './Cap11/forms-cap11.module';
+import { ReacFormsComponent } from './Cap012/reac-forms/reac-forms.component'; // module cap11
 
 
 
@@ -186,13 +187,15 @@ export function showGreetingMessage(): string {
     AlertMsgComponent,
     UseFactoryHomeComponent,
     FactoryUsuseValueComponent,
+    ReacFormsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     AdminModule,  // import il routing module che ho creato per forChild
-    FormsCap11Module
+    FormsCap11Module,
+    ReactiveFormsModule
   ],
   providers: [
     // provideClientHydration(),

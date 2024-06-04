@@ -58,6 +58,7 @@ import { FactoryUsuseValueComponent } from './Cap010/factory-ususe-value/factory
 import { AppformComponent } from './Cap11/appform/appform.component';
 import { AppSubmitComponent } from './Cap11/app-submit/app-submit.component';
 import { AppTemplatedrivenComponent } from './Cap11/app-templatedriven/app-templatedriven.component';
+import { ReacFormsComponent } from './Cap012/reac-forms/reac-forms.component';
 
 
 
@@ -112,6 +113,7 @@ const routes: Routes = [
   { path: 'appform11', component: AppformComponent },
   { path: 'appSubm', component: AppSubmitComponent },
   { path: 'appTmpdriven', component: AppTemplatedrivenComponent },
+  { path: 'reacForms', component: ReacFormsComponent },
 
 
   {
