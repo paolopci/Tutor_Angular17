@@ -59,6 +59,7 @@ import { AppformComponent } from './Cap11/appform/appform.component';
 import { AppSubmitComponent } from './Cap11/app-submit/app-submit.component';
 import { AppTemplatedrivenComponent } from './Cap11/app-templatedriven/app-templatedriven.component';
 import { ReacFormsComponent } from './Cap012/reac-forms/reac-forms.component';
+import { FormGroupComponent } from './Cap012/form-group/form-group.component';
 
 
 
@@ -114,6 +115,7 @@ const routes: Routes = [
   { path: 'appSubm', component: AppSubmitComponent },
   { path: 'appTmpdriven', component: AppTemplatedrivenComponent },
   { path: 'reacForms', component: ReacFormsComponent },
+  { path: 'formGroup', component: FormGroupComponent },
 
 
   {

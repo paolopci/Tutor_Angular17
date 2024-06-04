@@ -94,7 +94,9 @@ import { AppConfigService } from './Cap010/services/app-config.service';
 import { AppUpdateService } from './Cap010/services/app-update.service';
 import { FactoryUsuseValueComponent } from './Cap010/factory-ususe-value/factory-ususe-value.component';
 import { FormsCap11Module } from './Cap11/forms-cap11.module';
-import { ReacFormsComponent } from './Cap012/reac-forms/reac-forms.component'; // module cap11
+import { ReacFormsComponent } from './Cap012/reac-forms/reac-forms.component';
+import { FormGroupComponent } from './Cap012/form-group/form-group.component';
+import { FormArrayComponent } from './Cap012/form-array/form-array.component'; // module cap11
 
 
 
@@ -188,6 +190,8 @@ export function showGreetingMessage(): string {
     UseFactoryHomeComponent,
     FactoryUsuseValueComponent,
     ReacFormsComponent,
+    FormGroupComponent,
+    FormArrayComponent,
   ],
   imports: [
     BrowserModule,
