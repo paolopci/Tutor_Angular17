@@ -65,6 +65,7 @@ import { FormBuilderComponent } from './Cap012/form-builder/form-builder.compone
 import { ValidationFormControlsComponent } from './Cap012/validation-form-controls/validation-form-controls.component';
 import { MultiStepReactiveFormComponent } from './Cap012/multi-step-reactive-form/multi-step-reactive-form.component';
 import { LoginMultiValidationsComponent } from './Cap012/login-multi-validations/login-multi-validations.component';
+import { CustomUrlValidatorComponent } from './Cap013/custom-url-validator/custom-url-validator.component';
 
 
 
@@ -126,6 +127,7 @@ const routes: Routes = [
   { path: 'validFormControls', component: ValidationFormControlsComponent },
   { path: 'multiStepRea', component: MultiStepReactiveFormComponent },
   { path: 'multivalLogin', component: LoginMultiValidationsComponent },
+  { path: 'custUrlVal', component: CustomUrlValidatorComponent },
 
 
   {
