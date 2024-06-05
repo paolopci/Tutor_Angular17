@@ -9,6 +9,8 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 export class MultiStepReactiveFormComponent {
   step: number = 1;
   myForm: FormGroup;
+  isSubmitted: boolean = false;
+
 
   constructor(private formBuilder: FormBuilder) {
     this.myForm = this.formBuilder.group({
@@ -18,7 +20,7 @@ export class MultiStepReactiveFormComponent {
         password: ['', Validators.required]
       }),
       additionalDetails: this.formBuilder.group({
-        mobile: ['', [Validators.required, Validators.maxLength(10)]],
+        mobile: ['', [Validators.required, Validators.pattern(/^\d{10}$/)]],
         address: ['', Validators.required],
         country: ['', Validators.required],
         gender: ['', Validators.required]
@@ -36,11 +38,29 @@ export class MultiStepReactiveFormComponent {
   }
 
   btnNext() {
+    const userDetailsGroup = this.myForm.get('userDetails') as FormGroup;
+    const additionalDetailsGroup = this.myForm.get('additionalDetails') as FormGroup;
+    if (userDetailsGroup.invalid && this.step == 1) {
+      return;
+    }
+    if (additionalDetailsGroup.invalid && this.step == 2) {
+      return;
+    }
     this.step++;
   }
 
-  formSubmit(){
+  formSubmit() {
+    if (this.myForm.valid) {
+      this.isSubmitted = true;
+    }
     console.log(this.myForm.value);
+  }
+
+  get userDetails() {
+    return this.myForm.get('userDetails') as FormGroup;
+  }
+  get additionalDetails() {
+    return this.myForm.get('additionalDetails') as FormGroup;
   }
 
 }
