@@ -3,7 +3,7 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { SwitchComponent } from './switch/switch.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { DarkModeComponent } from './Cap03/dark-mode/dark-mode.component';
@@ -93,7 +93,14 @@ import { MessageService } from './Cap010/services/message.service';
 import { AppConfigService } from './Cap010/services/app-config.service';
 import { AppUpdateService } from './Cap010/services/app-update.service';
 import { FactoryUsuseValueComponent } from './Cap010/factory-ususe-value/factory-ususe-value.component';
-import { FormsCap11Module } from './Cap11/forms-cap11.module'; // module cap11
+import { FormsCap11Module } from './Cap11/forms-cap11.module';
+import { ReacFormsComponent } from './Cap012/reac-forms/reac-forms.component';
+import { FormGroupComponent } from './Cap012/form-group/form-group.component';
+import { FormArrayComponent } from './Cap012/form-array/form-array.component';
+import { FormBuilderComponent } from './Cap012/form-builder/form-builder.component';
+import { ValidationFormControlsComponent } from './Cap012/validation-form-controls/validation-form-controls.component';
+import { MultiStepReactiveFormComponent } from './Cap012/multi-step-reactive-form/multi-step-reactive-form.component';
+import { LoginMultiValidationsComponent } from './Cap012/login-multi-validations/login-multi-validations.component'; // module cap11
 
 
 
@@ -186,13 +193,21 @@ export function showGreetingMessage(): string {
     AlertMsgComponent,
     UseFactoryHomeComponent,
     FactoryUsuseValueComponent,
+    ReacFormsComponent,
+    FormGroupComponent,
+    FormArrayComponent,
+    FormBuilderComponent,
+    ValidationFormControlsComponent,
+    MultiStepReactiveFormComponent,
+    LoginMultiValidationsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     AdminModule,  // import il routing module che ho creato per forChild
-    FormsCap11Module
+    FormsCap11Module,
+    ReactiveFormsModule
   ],
   providers: [
     // provideClientHydration(),

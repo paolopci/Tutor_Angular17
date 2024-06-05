@@ -58,6 +58,13 @@ import { FactoryUsuseValueComponent } from './Cap010/factory-ususe-value/factory
 import { AppformComponent } from './Cap11/appform/appform.component';
 import { AppSubmitComponent } from './Cap11/app-submit/app-submit.component';
 import { AppTemplatedrivenComponent } from './Cap11/app-templatedriven/app-templatedriven.component';
+import { ReacFormsComponent } from './Cap012/reac-forms/reac-forms.component';
+import { FormGroupComponent } from './Cap012/form-group/form-group.component';
+import { FormArrayComponent } from './Cap012/form-array/form-array.component';
+import { FormBuilderComponent } from './Cap012/form-builder/form-builder.component';
+import { ValidationFormControlsComponent } from './Cap012/validation-form-controls/validation-form-controls.component';
+import { MultiStepReactiveFormComponent } from './Cap012/multi-step-reactive-form/multi-step-reactive-form.component';
+import { LoginMultiValidationsComponent } from './Cap012/login-multi-validations/login-multi-validations.component';
 
 
 
@@ -112,6 +119,13 @@ const routes: Routes = [
   { path: 'appform11', component: AppformComponent },
   { path: 'appSubm', component: AppSubmitComponent },
   { path: 'appTmpdriven', component: AppTemplatedrivenComponent },
+  { path: 'reacForms', component: ReacFormsComponent },
+  { path: 'formGroup', component: FormGroupComponent },
+  { path: 'formArray', component: FormArrayComponent },
+  { path: 'formBuilder', component: FormBuilderComponent },
+  { path: 'validFormControls', component: ValidationFormControlsComponent },
+  { path: 'multiStepRea', component: MultiStepReactiveFormComponent },
+  { path: 'multivalLogin', component: LoginMultiValidationsComponent },
 
 
   {
