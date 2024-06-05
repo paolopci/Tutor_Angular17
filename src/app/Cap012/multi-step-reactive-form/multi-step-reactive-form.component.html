@@ -85,7 +85,8 @@
         <button type="button" class="btn btn-primary" (click)="btnPrevious()" *ngIf="step != 1">Previous</button>
         <button type="button" id='btnNext' class="btn btn-primary mx-2" (click)="btnNext()"
             *ngIf="step!=3">Next</button>
-        <button type="submit" class="btn btn-success" *ngIf="step == 3">Submit</button>
+        <button type="submit" class="btn btn-success" *ngIf="step == 3"
+            [disabled]="myForm.pristine || myForm.invalid">Submit</button>
     </form>
     <ng-container *ngIf="isSubmitted">
         <h2 class="text-success">Form Submitted Successfully</h2>

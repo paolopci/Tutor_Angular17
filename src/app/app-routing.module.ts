@@ -64,6 +64,7 @@ import { FormArrayComponent } from './Cap012/form-array/form-array.component';
 import { FormBuilderComponent } from './Cap012/form-builder/form-builder.component';
 import { ValidationFormControlsComponent } from './Cap012/validation-form-controls/validation-form-controls.component';
 import { MultiStepReactiveFormComponent } from './Cap012/multi-step-reactive-form/multi-step-reactive-form.component';
+import { LoginMultiValidationsComponent } from './Cap012/login-multi-validations/login-multi-validations.component';
 
 
 
@@ -124,6 +125,7 @@ const routes: Routes = [
   { path: 'formBuilder', component: FormBuilderComponent },
   { path: 'validFormControls', component: ValidationFormControlsComponent },
   { path: 'multiStepRea', component: MultiStepReactiveFormComponent },
+  { path: 'multivalLogin', component: LoginMultiValidationsComponent },
 
 
   {
