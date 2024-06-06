@@ -72,6 +72,10 @@ import { MycomComponent } from './Cap014/admin/mycom.component';
 import { HomeComponent } from './Cap014/home/home.component';
 import { LoginFormComponent } from './Cap014/home/login-form.component';
 import { formGuard } from './Cap014/home/form-guard.guard';
+import { HomeChildParentComponent } from './Cap014/home-child-parent/home-child-parent.component';
+import { Child1Component } from './Cap014/home-child-parent/child1/child1.component';
+import { Child2Component } from './Cap014/home-child-parent/child2/child2.component';
+import { AuthGuard } from './Cap014/home-child-parent/child-guard/auth.guard';
 
 
 
@@ -142,8 +146,6 @@ const routes: Routes = [
       testGuard
     ]
   },
-
-
   {
     path: 'parent', component: AppParentRouteComponent, children: [
       { path: 'child1', component: AppChildRoute01Component },
@@ -159,9 +161,14 @@ const routes: Routes = [
       { path: 'prod03', component: AppProductDettaglioThreeComponent },
     ]
   },
+  {
+    path: 'parent01', component: HomeChildParentComponent, canActivateChild: [AuthGuard], children: [
+      { path: 'child1', component: Child1Component },
+      { path: 'child2', component: Child2Component },
+    ]
+  },
 
-  //{ path: '**', component: PageNotFoundComponent },
-  //  { path: '**', redirectTo: 'home', pathMatch: 'full' },
+
 ];
 
 @NgModule({

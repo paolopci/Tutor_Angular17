@@ -105,7 +105,10 @@ import { CustomUrlValidatorComponent } from './Cap013/custom-url-validator/custo
 import { AdminComponent } from './Cap014/admin/admin.component';
 import { MycomComponent } from './Cap014/admin/mycom.component';
 import { HomeComponent } from './Cap014/home/home.component';
-import { LoginFormComponent } from './Cap014/home/login-form.component'; // module cap11
+import { LoginFormComponent } from './Cap014/home/login-form.component';
+import { HomeChildParentComponent } from './Cap014/home-child-parent/home-child-parent.component';
+import { Child1Component } from './Cap014/home-child-parent/child1/child1.component';
+import { Child2Component } from './Cap014/home-child-parent/child2/child2.component'; // module cap11
 
 
 
@@ -210,6 +213,9 @@ export function showGreetingMessage(): string {
     MycomComponent,
     HomeComponent,
     LoginFormComponent,
+    HomeChildParentComponent,
+    Child1Component,
+    Child2Component,
   ],
   imports: [
     BrowserModule,

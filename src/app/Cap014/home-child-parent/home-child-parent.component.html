@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>Parent Component</h2>
+    <ul>
+        <li><a href="#" routerLink="/parent01/child1">Child 1</a></li>  <!-- queste sono path da app-routing.module-->
+        <li><a href="#" routerLink="/parent01/child2">Child 2</a></li>
+    </ul>
+    <hr>
+    <button type="button" (click)="enableRoutes()">Enable Child Routes</button>
+    <router-outlet></router-outlet>
+</div>
+
