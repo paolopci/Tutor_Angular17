@@ -69,6 +69,9 @@ import { CustomUrlValidatorComponent } from './Cap013/custom-url-validator/custo
 import { AdminComponent } from './Cap014/admin/admin.component';
 import { testGuard } from './Cap014/test.guard';
 import { MycomComponent } from './Cap014/admin/mycom.component';
+import { HomeComponent } from './Cap014/home/home.component';
+import { LoginFormComponent } from './Cap014/home/login-form.component';
+import { formGuard } from './Cap014/home/form-guard.guard';
 
 
 
@@ -132,6 +135,8 @@ const routes: Routes = [
   { path: 'multivalLogin', component: LoginMultiValidationsComponent },
   { path: 'custUrlVal', component: CustomUrlValidatorComponent },
   { path: 'mycomGuardTest', component: MycomComponent },
+  { path: 'homeguard02', component: HomeComponent },
+  { path: 'logForm02', component: LoginFormComponent, canDeactivate: [formGuard] },
   {
     path: 'admin01', component: AdminComponent, canActivate: [
       testGuard

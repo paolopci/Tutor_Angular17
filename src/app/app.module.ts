@@ -103,7 +103,9 @@ import { MultiStepReactiveFormComponent } from './Cap012/multi-step-reactive-for
 import { LoginMultiValidationsComponent } from './Cap012/login-multi-validations/login-multi-validations.component';
 import { CustomUrlValidatorComponent } from './Cap013/custom-url-validator/custom-url-validator.component';
 import { AdminComponent } from './Cap014/admin/admin.component';
-import { MycomComponent } from './Cap014/admin/mycom.component'; // module cap11
+import { MycomComponent } from './Cap014/admin/mycom.component';
+import { HomeComponent } from './Cap014/home/home.component';
+import { LoginFormComponent } from './Cap014/home/login-form.component'; // module cap11
 
 
 
@@ -206,6 +208,8 @@ export function showGreetingMessage(): string {
     CustomUrlValidatorComponent,
     AdminComponent,
     MycomComponent,
+    HomeComponent,
+    LoginFormComponent,
   ],
   imports: [
     BrowserModule,
