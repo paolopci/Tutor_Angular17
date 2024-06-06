@@ -66,6 +66,9 @@ import { ValidationFormControlsComponent } from './Cap012/validation-form-contro
 import { MultiStepReactiveFormComponent } from './Cap012/multi-step-reactive-form/multi-step-reactive-form.component';
 import { LoginMultiValidationsComponent } from './Cap012/login-multi-validations/login-multi-validations.component';
 import { CustomUrlValidatorComponent } from './Cap013/custom-url-validator/custom-url-validator.component';
+import { AdminComponent } from './Cap014/admin/admin.component';
+import { testGuard } from './Cap014/test.guard';
+import { MycomComponent } from './Cap014/admin/mycom.component';
 
 
 
@@ -128,6 +131,12 @@ const routes: Routes = [
   { path: 'multiStepRea', component: MultiStepReactiveFormComponent },
   { path: 'multivalLogin', component: LoginMultiValidationsComponent },
   { path: 'custUrlVal', component: CustomUrlValidatorComponent },
+  { path: 'mycomGuardTest', component: MycomComponent },
+  {
+    path: 'admin01', component: AdminComponent, canActivate: [
+      testGuard
+    ]
+  },
 
 
   {
@@ -146,8 +155,8 @@ const routes: Routes = [
     ]
   },
 
-   //{ path: '**', component: PageNotFoundComponent },
-//  { path: '**', redirectTo: 'home', pathMatch: 'full' },
+  //{ path: '**', component: PageNotFoundComponent },
+  //  { path: '**', redirectTo: 'home', pathMatch: 'full' },
 ];
 
 @NgModule({
