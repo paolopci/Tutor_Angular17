@@ -108,7 +108,9 @@ import { HomeComponent } from './Cap014/home/home.component';
 import { LoginFormComponent } from './Cap014/home/login-form.component';
 import { HomeChildParentComponent } from './Cap014/home-child-parent/home-child-parent.component';
 import { Child1Component } from './Cap014/home-child-parent/child1/child1.component';
-import { Child2Component } from './Cap014/home-child-parent/child2/child2.component'; // module cap11
+import { Child2Component } from './Cap014/home-child-parent/child2/child2.component';
+import { Admin01Component } from './Cap014/formLogin/admin01/admin01.component';
+import { Login01Component } from './Cap014/formLogin/login01/login01.component'; 
 
 
 
@@ -216,6 +218,8 @@ export function showGreetingMessage(): string {
     HomeChildParentComponent,
     Child1Component,
     Child2Component,
+    Admin01Component,
+    Login01Component,
   ],
   imports: [
     BrowserModule,
