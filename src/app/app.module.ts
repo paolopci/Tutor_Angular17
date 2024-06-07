@@ -101,7 +101,22 @@ import { FormBuilderComponent } from './Cap012/form-builder/form-builder.compone
 import { ValidationFormControlsComponent } from './Cap012/validation-form-controls/validation-form-controls.component';
 import { MultiStepReactiveFormComponent } from './Cap012/multi-step-reactive-form/multi-step-reactive-form.component';
 import { LoginMultiValidationsComponent } from './Cap012/login-multi-validations/login-multi-validations.component';
-import { CustomUrlValidatorComponent } from './Cap013/custom-url-validator/custom-url-validator.component'; // module cap11
+import { CustomUrlValidatorComponent } from './Cap013/custom-url-validator/custom-url-validator.component';
+import { AdminComponent } from './Cap014/admin/admin.component';
+import { MycomComponent } from './Cap014/admin/mycom.component';
+import { HomeComponent } from './Cap014/home/home.component';
+import { LoginFormComponent } from './Cap014/home/login-form.component';
+import { HomeChildParentComponent } from './Cap014/home-child-parent/home-child-parent.component';
+import { Child1Component } from './Cap014/home-child-parent/child1/child1.component';
+import { Child2Component } from './Cap014/home-child-parent/child2/child2.component';
+import { Admin01Component } from './Cap014/formLogin/admin01/admin01.component';
+import { Login01Component } from './Cap014/formLogin/login01/login01.component';
+import { Admin02Component } from './Cap014/CanLoad/admin02/admin02.component';
+import { User02Component } from './Cap014/CanLoad/user02/user02.component';
+import { Home02Component } from './Cap014/CanLoad/home02/home02.component';
+import { User03Component } from './Cap014/CanMatch/user03/user03.component';
+import { Admin03Component } from './Cap014/CanMatch/admin03/admin03.component';
+import { Home03Component } from './Cap014/CanMatch/home03/home03.component'; 
 
 
 
@@ -202,6 +217,21 @@ export function showGreetingMessage(): string {
     MultiStepReactiveFormComponent,
     LoginMultiValidationsComponent,
     CustomUrlValidatorComponent,
+    AdminComponent,
+    MycomComponent,
+    HomeComponent,
+    LoginFormComponent,
+    HomeChildParentComponent,
+    Child1Component,
+    Child2Component,
+    Admin01Component,
+    Login01Component,
+    Admin02Component,
+    User02Component,
+    Home02Component,
+    User03Component,
+    Admin03Component,
+    Home03Component,
   ],
   imports: [
     BrowserModule,

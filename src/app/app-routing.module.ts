@@ -66,6 +66,25 @@ import { ValidationFormControlsComponent } from './Cap012/validation-form-contro
 import { MultiStepReactiveFormComponent } from './Cap012/multi-step-reactive-form/multi-step-reactive-form.component';
 import { LoginMultiValidationsComponent } from './Cap012/login-multi-validations/login-multi-validations.component';
 import { CustomUrlValidatorComponent } from './Cap013/custom-url-validator/custom-url-validator.component';
+import { AdminComponent } from './Cap014/admin/admin.component';
+import { testGuard } from './Cap014/test.guard';
+import { MycomComponent } from './Cap014/admin/mycom.component';
+import { HomeComponent } from './Cap014/home/home.component';
+import { LoginFormComponent } from './Cap014/home/login-form.component';
+import { formGuard } from './Cap014/home/form-guard.guard';
+import { HomeChildParentComponent } from './Cap014/home-child-parent/home-child-parent.component';
+import { Child1Component } from './Cap014/home-child-parent/child1/child1.component';
+import { Child2Component } from './Cap014/home-child-parent/child2/child2.component';
+import { AuthGuard } from './Cap014/home-child-parent/child-guard/auth.guard';
+import { auth2Guard } from './Cap014/home-child-parent/child-guard/auth2.guard';
+import { Login01Component } from './Cap014/formLogin/login01/login01.component';
+import { Admin01Component } from './Cap014/formLogin/admin01/admin01.component';
+import { auth01Guard } from './Cap014/formLogin/authentication/auth01.guard';
+import { Admin02Component } from './Cap014/CanLoad/admin02/admin02.component';
+import { User02Component } from './Cap014/CanLoad/user02/user02.component';
+import { Home02Component } from './Cap014/CanLoad/home02/home02.component';
+import { admin03Guard } from './Cap014/CanMatch/guards/admin03.guard';
+import { user03Guard } from './Cap014/CanMatch/guards/user03.guard';
 
 
 
@@ -128,8 +147,14 @@ const routes: Routes = [
   { path: 'multiStepRea', component: MultiStepReactiveFormComponent },
   { path: 'multivalLogin', component: LoginMultiValidationsComponent },
   { path: 'custUrlVal', component: CustomUrlValidatorComponent },
-
-
+  { path: 'mycomGuardTest', component: MycomComponent },
+  { path: 'homeguard02', component: HomeComponent },
+  { path: 'logForm02', component: LoginFormComponent, canDeactivate: [formGuard] },
+  {
+    path: 'admin01', component: AdminComponent, canActivate: [
+      testGuard
+    ]
+  },
   {
     path: 'parent', component: AppParentRouteComponent, children: [
       { path: 'child1', component: AppChildRoute01Component },
@@ -145,9 +170,35 @@ const routes: Routes = [
       { path: 'prod03', component: AppProductDettaglioThreeComponent },
     ]
   },
+  {
+    path: 'parent01', component: HomeChildParentComponent, canActivateChild: [AuthGuard, auth2Guard], children: [
+      { path: 'child1', component: Child1Component },
+      { path: 'child2', component: Child2Component },
+    ]
+  },
+  { path: 'formLogin', component: Login01Component },
+  { path: 'formAdmin', component: Admin01Component, canActivate: [auth01Guard] },
 
-   //{ path: '**', component: PageNotFoundComponent },
-//  { path: '**', redirectTo: 'home', pathMatch: 'full' },
+
+  // Cap 14 - esempio CanLoad
+  { path: 'admin002', component: Admin02Component },
+  { path: 'user002', component: User02Component },
+  { path: 'home002', component: Home02Component },
+
+
+  // Cap 14 - esempio CanMatch
+  {
+    path: 'home03',
+    canMatch: [admin03Guard],
+    loadChildren: () => import('./Cap014/CanMatch/admin03/admin.module').then((m) => m.AdminModule)
+  },
+  {
+    path: 'home03',
+    canMatch: [user03Guard],
+    loadChildren: () => import('./Cap014/CanMatch/user03/user.module').then((u) => u.UserModule)
+  },
+
+  { path: '', component: HomeComponent }
 ];
 
 @NgModule({
