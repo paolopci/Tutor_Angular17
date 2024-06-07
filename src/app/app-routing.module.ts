@@ -163,7 +163,7 @@ const routes: Routes = [
     ]
   },
   {
-    path: 'parent01', component: HomeChildParentComponent, canActivateChild: [ auth2Guard], children: [
+    path: 'parent01', component: HomeChildParentComponent, canActivateChild: [AuthGuard, auth2Guard], children: [
       { path: 'child1', component: Child1Component },
       { path: 'child2', component: Child2Component },
     ]
