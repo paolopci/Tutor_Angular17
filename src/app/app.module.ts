@@ -116,7 +116,8 @@ import { User02Component } from './Cap014/CanLoad/user02/user02.component';
 import { Home02Component } from './Cap014/CanLoad/home02/home02.component';
 import { User03Component } from './Cap014/CanMatch/user03/user03.component';
 import { Admin03Component } from './Cap014/CanMatch/admin03/admin03.component';
-import { Home03Component } from './Cap014/CanMatch/home03/home03.component'; 
+import { Home03Component } from './Cap014/CanMatch/home03/home03.component';
+import { HomeCompComponent } from './Cap015/example02/home-comp/home-comp.component'; 
 
 
 
@@ -232,6 +233,7 @@ export function showGreetingMessage(): string {
     User03Component,
     Admin03Component,
     Home03Component,
+    HomeCompComponent,
   ],
   imports: [
     BrowserModule,

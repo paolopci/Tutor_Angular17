@@ -85,6 +85,9 @@ import { User02Component } from './Cap014/CanLoad/user02/user02.component';
 import { Home02Component } from './Cap014/CanLoad/home02/home02.component';
 import { admin03Guard } from './Cap014/CanMatch/guards/admin03.guard';
 import { user03Guard } from './Cap014/CanMatch/guards/user03.guard';
+import { HomeCompComponent } from './Cap015/example02/home-comp/home-comp.component';
+import { FirstComponent } from './Cap015/example02/first/first.component';
+import { SecondComponent } from './Cap015/example02/second/second.component';
 
 
 
@@ -194,11 +197,18 @@ const routes: Routes = [
   },
   {
     path: 'home03',
-    canMatch: [user03Guard],
+    //canMatch: [user03Guard],
     loadChildren: () => import('./Cap014/CanMatch/user03/user.module').then((u) => u.UserModule)
   },
 
-  { path: '', component: HomeComponent }
+  { path: '', component: HomeComponent },
+
+  // Cap 15 - Load modules con lazy 
+  { path: 'homeComp', component: HomeCompComponent },
+  { path: 'first', loadChildren: () => import('./Cap015/example02/first/first.module').then(m => m.FirstModule) },
+  { path: 'second', loadChildren: () => import('./Cap015/example02/second/second.module').then(m => m.SecondModule) }
+  // { path: 'first', component: FirstComponent },
+  // { path: 'second', component: SecondComponent }
 ];
 
 @NgModule({
