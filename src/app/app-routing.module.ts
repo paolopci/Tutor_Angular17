@@ -83,6 +83,8 @@ import { auth01Guard } from './Cap014/formLogin/authentication/auth01.guard';
 import { Admin02Component } from './Cap014/CanLoad/admin02/admin02.component';
 import { User02Component } from './Cap014/CanLoad/user02/user02.component';
 import { Home02Component } from './Cap014/CanLoad/home02/home02.component';
+import { admin03Guard } from './Cap014/CanMatch/guards/admin03.guard';
+import { user03Guard } from './Cap014/CanMatch/guards/user03.guard';
 
 
 
@@ -183,6 +185,20 @@ const routes: Routes = [
   { path: 'user002', component: User02Component },
   { path: 'home002', component: Home02Component },
 
+
+  // Cap 14 - esempio CanMatch
+  {
+    path: 'home03',
+    canMatch: [admin03Guard],
+    loadChildren: () => import('./Cap014/CanMatch/admin03/admin.module').then((m) => m.AdminModule)
+  },
+  {
+    path: 'home03',
+    canMatch: [user03Guard],
+    loadChildren: () => import('./Cap014/CanMatch/user03/user.module').then((u) => u.UserModule)
+  },
+
+  { path: '', component: HomeComponent }
 ];
 
 @NgModule({
