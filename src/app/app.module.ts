@@ -110,7 +110,10 @@ import { HomeChildParentComponent } from './Cap014/home-child-parent/home-child-
 import { Child1Component } from './Cap014/home-child-parent/child1/child1.component';
 import { Child2Component } from './Cap014/home-child-parent/child2/child2.component';
 import { Admin01Component } from './Cap014/formLogin/admin01/admin01.component';
-import { Login01Component } from './Cap014/formLogin/login01/login01.component'; 
+import { Login01Component } from './Cap014/formLogin/login01/login01.component';
+import { Admin02Component } from './Cap014/CanLoad/admin02/admin02.component';
+import { User02Component } from './Cap014/CanLoad/user02/user02.component';
+import { Home02Component } from './Cap014/CanLoad/home02/home02.component'; 
 
 
 
@@ -220,6 +223,9 @@ export function showGreetingMessage(): string {
     Child2Component,
     Admin01Component,
     Login01Component,
+    Admin02Component,
+    User02Component,
+    Home02Component,
   ],
   imports: [
     BrowserModule,

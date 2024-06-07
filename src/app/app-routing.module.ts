@@ -80,6 +80,9 @@ import { auth2Guard } from './Cap014/home-child-parent/child-guard/auth2.guard';
 import { Login01Component } from './Cap014/formLogin/login01/login01.component';
 import { Admin01Component } from './Cap014/formLogin/admin01/admin01.component';
 import { auth01Guard } from './Cap014/formLogin/authentication/auth01.guard';
+import { Admin02Component } from './Cap014/CanLoad/admin02/admin02.component';
+import { User02Component } from './Cap014/CanLoad/user02/user02.component';
+import { Home02Component } from './Cap014/CanLoad/home02/home02.component';
 
 
 
@@ -174,6 +177,11 @@ const routes: Routes = [
   { path: 'formLogin', component: Login01Component },
   { path: 'formAdmin', component: Admin01Component, canActivate: [auth01Guard] },
 
+
+  // Cap 14 - esempio CanLoad
+  { path: 'admin002', component: Admin02Component },
+  { path: 'user002', component: User02Component },
+  { path: 'home002', component: Home02Component },
 
 ];
 
