@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { SwitchComponent } from './switch/switch.component';
 import { DarkModeComponent } from './Cap03/dark-mode/dark-mode.component';
@@ -205,14 +205,23 @@ const routes: Routes = [
 
   // Cap 15 - Load modules con lazy 
   { path: 'homeComp', component: HomeCompComponent },
-  { path: 'first', loadChildren: () => import('./Cap015/example02/first/first.module').then(m => m.FirstModule) },
-  { path: 'second', loadChildren: () => import('./Cap015/example02/second/second.module').then(m => m.SecondModule) }
-  // { path: 'first', component: FirstComponent },
-  // { path: 'second', component: SecondComponent }
+  // Cap 15 - Load modules con lazy first component
+  // {
+  //   path: 'first',
+  //   loadChildren: () => import('./Cap015/example02/first/first.module').then(m => m.FirstModule)
+  // },
+  // // Cap 15 - Load modules con lazy second component
+  // {
+  //   path: 'second',
+  //   loadChildren: () => import('./Cap015/example02/second/second.module').then(m => m.SecondModule)
+  // }
+  // carico tutto all'avvio dell'applicazione
+  { path: 'first', component: FirstComponent },
+  { path: 'second', component: SecondComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
