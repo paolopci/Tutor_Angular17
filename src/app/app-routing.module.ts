@@ -88,6 +88,9 @@ import { user03Guard } from './Cap014/CanMatch/guards/user03.guard';
 import { HomeCompComponent } from './Cap015/example02/home-comp/home-comp.component';
 import { FirstComponent } from './Cap015/example02/first/first.component';
 import { SecondComponent } from './Cap015/example02/second/second.component';
+import { HomeDeferCompComponent } from './Cap015/example05/home-defer-comp/home-defer-comp.component';
+import { Home08Component } from './Cap015/example08/home08/home08.component';
+import { Home09Component } from './Cap015/example09/home09/home09.component';
 
 
 
@@ -206,18 +209,23 @@ const routes: Routes = [
   // Cap 15 - Load modules con lazy 
   { path: 'homeComp', component: HomeCompComponent },
   // Cap 15 - Load modules con lazy first component
-  // {
-  //   path: 'first',
-  //   loadChildren: () => import('./Cap015/example02/first/first.module').then(m => m.FirstModule)
-  // },
-  // // Cap 15 - Load modules con lazy second component
-  // {
-  //   path: 'second',
-  //   loadChildren: () => import('./Cap015/example02/second/second.module').then(m => m.SecondModule)
-  // }
+  {
+    path: 'first',
+    loadChildren: () => import('./Cap015/example02/first/first.module').then(m => m.FirstModule)
+  },
+  // Cap 15 - Load modules con lazy second component
+  {
+    path: 'second',
+    loadChildren: () => import('./Cap015/example02/second/second.module').then(m => m.SecondModule)
+  },
   // carico tutto all'avvio dell'applicazione
-  { path: 'first', component: FirstComponent },
-  { path: 'second', component: SecondComponent }
+  // { path: 'first', component: FirstComponent },
+  // { path: 'second', component: SecondComponent }
+
+  { path: 'deffHome', component: HomeDeferCompComponent },
+  { path: 'carIdle', component: Home08Component },
+  { path: 'carViewport', component: Home09Component },
+
 ];
 
 @NgModule({
