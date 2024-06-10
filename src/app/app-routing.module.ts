@@ -91,6 +91,7 @@ import { SecondComponent } from './Cap015/example02/second/second.component';
 import { HomeDeferCompComponent } from './Cap015/example05/home-defer-comp/home-defer-comp.component';
 import { Home08Component } from './Cap015/example08/home08/home08.component';
 import { Home09Component } from './Cap015/example09/home09/home09.component';
+import { Home11Component } from './Cap015/example11/home11/home11.component';
 
 
 
@@ -225,6 +226,7 @@ const routes: Routes = [
   { path: 'deffHome', component: HomeDeferCompComponent },
   { path: 'carIdle', component: Home08Component },
   { path: 'carViewport', component: Home09Component },
+  { path: 'cardHover', component: Home11Component },
 
 ];
 

@@ -1,0 +1,10 @@
+<div class="d-flex justify-content-center">
+    <button type="button" class="btn btn-warning w-25 mx-3 my-3 fs-4 " #showContent>Show Users</button>
+</div>
+<div>
+    @defer (on interaction(showContent)) {
+        <app-users11></app-users11>
+    }@loading(minimum 800ms) {
+        <h3 class="text-center p-2 m-2 fs-2">Loading Users...</h3>
+    }
+</div>
