@@ -138,9 +138,12 @@
         </p>
     </article>
 </div>
-
-<div #showContent>
-    @defer (on viewport(showContent)) {
+<div class="d-flex justify-content-center">
+    <button type="button" class="btn-warning w-25 mx-3" #showContent>Show Users</button>
+</div>
+ 
+<div>
+    @defer (on interaction(showContent)) {
     <app-users09></app-users09>
     }@loading (minimum 800ms){
     <h3 class="text-center p-2 m-2 fs-2">Loading Users...</h3>
