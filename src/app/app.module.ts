@@ -120,6 +120,7 @@ import { Home03Component } from './Cap014/CanMatch/home03/home03.component';
 import { HomeCompComponent } from './Cap015/example02/home-comp/home-comp.component';
 import { TestDeferCompComponent } from './Cap015/example05/test-defer-comp/test-defer-comp.component';
 import { HomeDeferCompComponent } from './Cap015/example05/home-defer-comp/home-defer-comp.component';
+import { Homerxjs01Component } from './Cap016/example01/homerxjs01/homerxjs01.component';
 
 
 
@@ -239,6 +240,7 @@ export function showGreetingMessage(): string {
     HomeCompComponent,
     TestDeferCompComponent,
     HomeDeferCompComponent,
+    Homerxjs01Component,
 
   ],
   imports: [
