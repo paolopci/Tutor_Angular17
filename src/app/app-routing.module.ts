@@ -96,6 +96,7 @@ import { Home12Component } from './Cap015/example12/home12/home12.component';
 import { Home13Component } from './Cap015/example13/home13/home13.component';
 import { Home14Component } from './Cap015/example14/home14/home14.component';
 import { Homerxjs01Component } from './Cap016/example01/homerxjs01/homerxjs01.component';
+import { Homerxjs02Component } from './Cap016/example02/homerxjs02/homerxjs02.component';
 
 
 
@@ -236,6 +237,7 @@ const routes: Routes = [
   { path: 'cardCust', component: Home14Component },
   // Cap 16 - RxJS and Observables
   { path: 'home16', component: Homerxjs01Component },
+  { path: 'homerxjs02', component: Homerxjs02Component },
 
 ];
 
