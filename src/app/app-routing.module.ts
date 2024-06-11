@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { SwitchComponent } from './switch/switch.component';
 import { DarkModeComponent } from './Cap03/dark-mode/dark-mode.component';
@@ -85,6 +85,16 @@ import { User02Component } from './Cap014/CanLoad/user02/user02.component';
 import { Home02Component } from './Cap014/CanLoad/home02/home02.component';
 import { admin03Guard } from './Cap014/CanMatch/guards/admin03.guard';
 import { user03Guard } from './Cap014/CanMatch/guards/user03.guard';
+import { HomeCompComponent } from './Cap015/example02/home-comp/home-comp.component';
+import { FirstComponent } from './Cap015/example02/first/first.component';
+import { SecondComponent } from './Cap015/example02/second/second.component';
+import { HomeDeferCompComponent } from './Cap015/example05/home-defer-comp/home-defer-comp.component';
+import { Home08Component } from './Cap015/example08/home08/home08.component';
+import { Home09Component } from './Cap015/example09/home09/home09.component';
+import { Home11Component } from './Cap015/example11/home11/home11.component';
+import { Home12Component } from './Cap015/example12/home12/home12.component';
+import { Home13Component } from './Cap015/example13/home13/home13.component';
+import { Home14Component } from './Cap015/example14/home14/home14.component';
 
 
 
@@ -194,15 +204,40 @@ const routes: Routes = [
   },
   {
     path: 'home03',
-    canMatch: [user03Guard],
+    //canMatch: [user03Guard],
     loadChildren: () => import('./Cap014/CanMatch/user03/user.module').then((u) => u.UserModule)
   },
 
-  { path: '', component: HomeComponent }
+  { path: '', component: HomeComponent },
+
+  // Cap 15 - Load modules con lazy 
+  { path: 'homeComp', component: HomeCompComponent },
+  // Cap 15 - Load modules con lazy first component
+  {
+    path: 'first',
+    loadChildren: () => import('./Cap015/example02/first/first.module').then(m => m.FirstModule)
+  },
+  // Cap 15 - Load modules con lazy second component
+  {
+    path: 'second',
+    loadChildren: () => import('./Cap015/example02/second/second.module').then(m => m.SecondModule)
+  },
+  // carico tutto all'avvio dell'applicazione
+  // { path: 'first', component: FirstComponent },
+  // { path: 'second', component: SecondComponent }
+
+  { path: 'deffHome', component: HomeDeferCompComponent },
+  { path: 'carIdle', component: Home08Component },
+  { path: 'carViewport', component: Home09Component },
+  { path: 'cardHover', component: Home11Component },
+  { path: 'cardImmed', component: Home12Component },
+  { path: 'cardPreMem', component: Home13Component },
+  { path: 'cardCust', component: Home14Component },
+
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
