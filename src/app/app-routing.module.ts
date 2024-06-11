@@ -93,6 +93,7 @@ import { Home08Component } from './Cap015/example08/home08/home08.component';
 import { Home09Component } from './Cap015/example09/home09/home09.component';
 import { Home11Component } from './Cap015/example11/home11/home11.component';
 import { Home12Component } from './Cap015/example12/home12/home12.component';
+import { Home13Component } from './Cap015/example13/home13/home13.component';
 
 
 
@@ -229,6 +230,7 @@ const routes: Routes = [
   { path: 'carViewport', component: Home09Component },
   { path: 'cardHover', component: Home11Component },
   { path: 'cardImmed', component: Home12Component },
+  { path: 'cardPreMem', component: Home13Component },
 
 ];
 
