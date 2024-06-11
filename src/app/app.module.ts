@@ -123,6 +123,7 @@ import { HomeDeferCompComponent } from './Cap015/example05/home-defer-comp/home-
 import { Homerxjs01Component } from './Cap016/example01/homerxjs01/homerxjs01.component';
 import { Homerxjs02Component } from './Cap016/example02/homerxjs02/homerxjs02.component';
 import { Homerxjs03Component } from './Cap016/example03/homerxjs03/homerxjs03.component';
+import { Homerxjs04Component } from './Cap016/example04/homerxjs04/homerxjs04.component';
 
 
 
@@ -245,6 +246,7 @@ export function showGreetingMessage(): string {
     Homerxjs01Component,
     Homerxjs02Component,
     Homerxjs03Component,
+    Homerxjs04Component,
   ],
   imports: [
     BrowserModule,
