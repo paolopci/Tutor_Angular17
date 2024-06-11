@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   styleUrl: './homerxjs02.component.css'
 })
 export class Homerxjs02Component {
-  observable = new Observable((observer) => {
+  observable = new Observable<number>((observer) => {
     observer.next(1);
     observer.next(2);
     observer.next(3);
