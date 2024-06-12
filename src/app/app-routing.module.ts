@@ -103,6 +103,7 @@ import { Homerxjs05Component } from './Cap016/example05/homerxjs05/homerxjs05.co
 import { Rxjs01Component } from './Cap017/example01/rxjs01/rxjs01.component';
 import { Rxjs02Component } from './Cap017/example02/rxjs02/rxjs02.component';
 import { Rxjs03Component } from './Cap017/example03/rxjs03/rxjs03.component';
+import { Rxjs05Component } from './Cap017/example05/rxjs05/rxjs05.component';
 
 
 
@@ -252,6 +253,7 @@ const routes: Routes = [
   { path: 'operOf', component: Rxjs01Component },
   { path: 'operfrom', component: Rxjs02Component },
   { path: 'operInterval', component: Rxjs03Component },
+  { path: 'operSpinner', component: Rxjs05Component },
 ];
 
 @NgModule({
