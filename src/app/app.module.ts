@@ -127,6 +127,7 @@ import { Homerxjs04Component } from './Cap016/example04/homerxjs04/homerxjs04.co
 import { Homerxjs05Component } from './Cap016/example05/homerxjs05/homerxjs05.component';
 import { Rxjs01Component } from './Cap017/example01/rxjs01/rxjs01.component';
 import { Rxjs02Component } from './Cap017/example02/rxjs02/rxjs02.component';
+import { Rxjs03Component } from './Cap017/example03/rxjs03/rxjs03.component';
 
 
 
@@ -253,6 +254,7 @@ export function showGreetingMessage(): string {
     Homerxjs05Component,
     Rxjs01Component,
     Rxjs02Component,
+    Rxjs03Component,
   ],
   imports: [
     BrowserModule,
