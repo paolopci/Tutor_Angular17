@@ -99,6 +99,7 @@ import { Homerxjs01Component } from './Cap016/example01/homerxjs01/homerxjs01.co
 import { Homerxjs02Component } from './Cap016/example02/homerxjs02/homerxjs02.component';
 import { Homerxjs03Component } from './Cap016/example03/homerxjs03/homerxjs03.component';
 import { Homerxjs04Component } from './Cap016/example04/homerxjs04/homerxjs04.component';
+import { Homerxjs05Component } from './Cap016/example05/homerxjs05/homerxjs05.component';
 
 
 
@@ -242,6 +243,7 @@ const routes: Routes = [
   { path: 'homerxjs02', component: Homerxjs02Component },
   { path: 'homerxjs03', component: Homerxjs03Component },
   { path: 'homerxjs04', component: Homerxjs04Component },
+  { path: 'homerxjs05', component: Homerxjs05Component },
 
 ];
 
