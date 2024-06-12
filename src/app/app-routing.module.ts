@@ -105,6 +105,7 @@ import { Rxjs02Component } from './Cap017/example02/rxjs02/rxjs02.component';
 import { Rxjs03Component } from './Cap017/example03/rxjs03/rxjs03.component';
 import { Rxjs05Component } from './Cap017/example05/rxjs05/rxjs05.component';
 import { Rxjs07Component } from './Cap017/example07/rxjs07/rxjs07.component';
+import { Rxjs08Component } from './Cap017/example08/rxjs08/rxjs08.component';
 
 
 
@@ -256,6 +257,7 @@ const routes: Routes = [
   { path: 'operInterval', component: Rxjs03Component },
   { path: 'operSpinner', component: Rxjs05Component },
   { path: 'operPipe', component: Rxjs07Component },
+  { path: 'operFilter', component: Rxjs08Component },
 ];
 
 @NgModule({
