@@ -100,6 +100,7 @@ import { Homerxjs02Component } from './Cap016/example02/homerxjs02/homerxjs02.co
 import { Homerxjs03Component } from './Cap016/example03/homerxjs03/homerxjs03.component';
 import { Homerxjs04Component } from './Cap016/example04/homerxjs04/homerxjs04.component';
 import { Homerxjs05Component } from './Cap016/example05/homerxjs05/homerxjs05.component';
+import { Rxjs01Component } from './Cap017/example01/rxjs01/rxjs01.component';
 
 
 
@@ -245,6 +246,8 @@ const routes: Routes = [
   { path: 'homerxjs04', component: Homerxjs04Component },
   { path: 'homerxjs05', component: Homerxjs05Component },
 
+  // Cap 17 - RxJs Operators
+  { path: 'operOf', component: Rxjs01Component },
 ];
 
 @NgModule({
