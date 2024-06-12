@@ -1,0 +1,13 @@
+<h1>Understanding Async Pipe</h1>
+<p class="text-black-50">Value from Observable: {{value$ | async}}</p>
+<br />
+<hr>
+<br>
+<p>Date: {{timeValue$ | async}}</p>
+<br />
+<hr>
+<br>
+
+<p *ngFor="let item of iterValue$ | async">
+    {{item}}
+</p>
