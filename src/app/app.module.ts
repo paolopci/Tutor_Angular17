@@ -140,6 +140,7 @@ import { HttpClient01Component } from './Cap18/example01/http-client01/http-clie
 // cap 18
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClient02Component } from './Cap18/example02/http-client02/http-client02.component';
+import { HttpClient03Component } from './Cap18/example03/http-client03/http-client03.component';
 
 
 
@@ -277,6 +278,7 @@ export function showGreetingMessage(): string {
     Rxjs13Component,
     HttpClient01Component,
     HttpClient02Component,
+    HttpClient03Component,
   ],
   imports: [
     BrowserModule,
