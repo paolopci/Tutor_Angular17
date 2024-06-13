@@ -108,6 +108,7 @@ import { Rxjs07Component } from './Cap017/example07/rxjs07/rxjs07.component';
 import { Rxjs08Component } from './Cap017/example08/rxjs08/rxjs08.component';
 import { Rxjs09Component } from './Cap017/example09/rxjs09/rxjs09.component';
 import { Rxjs10Component } from './Cap017/example10/rxjs10/rxjs10.component';
+import { Rxjs11Component } from './Cap017/example11/rxjs11/rxjs11.component';
 
 
 
@@ -261,6 +262,7 @@ const routes: Routes = [
   { path: 'operPipe', component: Rxjs07Component },
   { path: 'operMap', component: Rxjs09Component },
   { path: 'mergeMap', component: Rxjs10Component },
+  { path: 'mergeMapAss', component: Rxjs11Component },
 ];
 
 @NgModule({
