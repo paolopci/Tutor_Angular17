@@ -136,6 +136,9 @@ import { Rxjs10Component } from './Cap017/example10/rxjs10/rxjs10.component';
 import { Rxjs11Component } from './Cap017/example11/rxjs11/rxjs11.component';
 import { Rxjs12Component } from './Cap017/example12/rxjs12/rxjs12.component';
 import { Rxjs13Component } from './Cap017/example13/rxjs13/rxjs13.component';
+import { HttpClient01Component } from './Cap18/example01/http-client01/http-client01.component';
+// cap 18
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -271,6 +274,7 @@ export function showGreetingMessage(): string {
     Rxjs11Component,
     Rxjs12Component,
     Rxjs13Component,
+    HttpClient01Component,
   ],
   imports: [
     BrowserModule,
@@ -278,7 +282,8 @@ export function showGreetingMessage(): string {
     FormsModule,
     AdminModule,  // import il routing module che ho creato per forChild
     FormsCap11Module,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     // provideClientHydration(),

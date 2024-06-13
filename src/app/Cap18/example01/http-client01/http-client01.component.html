@@ -1,0 +1,35 @@
+<div class="container">
+    <div>
+        <button class="btn btn-primary" (click)="getData()">Get Data</button>
+    </div>
+    <ng-container *ngIf="loadData">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of responseData">
+                    <td>{{user.id}}</td>
+                    <td>{{user.name}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.phone}}</td>
+                    <td>{{user.address.city}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <div>
+            <p>{{responseData | json}}</p>
+        </div>
+    </ng-container>
+
+
+
+
+</div>

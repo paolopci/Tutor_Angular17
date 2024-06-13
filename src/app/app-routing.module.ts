@@ -111,6 +111,7 @@ import { Rxjs10Component } from './Cap017/example10/rxjs10/rxjs10.component';
 import { Rxjs11Component } from './Cap017/example11/rxjs11/rxjs11.component';
 import { Rxjs12Component } from './Cap017/example12/rxjs12/rxjs12.component';
 import { Rxjs13Component } from './Cap017/example13/rxjs13/rxjs13.component';
+import { HttpClient01Component } from './Cap18/example01/http-client01/http-client01.component';
 
 
 
@@ -267,6 +268,9 @@ const routes: Routes = [
   { path: 'mergeMapAss', component: Rxjs11Component },
   { path: 'concatMap', component: Rxjs12Component },
   { path: 'switchMap', component: Rxjs13Component },
+
+  // Cap 18 - Http call with HttpClient
+  { path: 'httpClient01', component: HttpClient01Component },
 ];
 
 @NgModule({
