@@ -112,6 +112,7 @@ import { Rxjs11Component } from './Cap017/example11/rxjs11/rxjs11.component';
 import { Rxjs12Component } from './Cap017/example12/rxjs12/rxjs12.component';
 import { Rxjs13Component } from './Cap017/example13/rxjs13/rxjs13.component';
 import { HttpClient01Component } from './Cap18/example01/http-client01/http-client01.component';
+import { HttpClient02Component } from './Cap18/example02/http-client02/http-client02.component';
 
 
 
@@ -271,6 +272,7 @@ const routes: Routes = [
 
   // Cap 18 - Http call with HttpClient
   { path: 'httpClient01', component: HttpClient01Component },
+  { path: 'httpClient02', component: HttpClient02Component },
 ];
 
 @NgModule({
