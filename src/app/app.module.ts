@@ -134,6 +134,8 @@ import { Rxjs08Component } from './Cap017/example08/rxjs08/rxjs08.component';
 import { Rxjs09Component } from './Cap017/example09/rxjs09/rxjs09.component';
 import { Rxjs10Component } from './Cap017/example10/rxjs10/rxjs10.component';
 import { Rxjs11Component } from './Cap017/example11/rxjs11/rxjs11.component';
+import { Rxjs12Component } from './Cap017/example12/rxjs12/rxjs12.component';
+import { Rxjs13Component } from './Cap017/example13/rxjs13/rxjs13.component';
 
 
 
@@ -267,6 +269,8 @@ export function showGreetingMessage(): string {
     Rxjs09Component,
     Rxjs10Component,
     Rxjs11Component,
+    Rxjs12Component,
+    Rxjs13Component,
   ],
   imports: [
     BrowserModule,
