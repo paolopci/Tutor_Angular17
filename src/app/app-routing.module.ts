@@ -100,6 +100,17 @@ import { Homerxjs02Component } from './Cap016/example02/homerxjs02/homerxjs02.co
 import { Homerxjs03Component } from './Cap016/example03/homerxjs03/homerxjs03.component';
 import { Homerxjs04Component } from './Cap016/example04/homerxjs04/homerxjs04.component';
 import { Homerxjs05Component } from './Cap016/example05/homerxjs05/homerxjs05.component';
+import { Rxjs01Component } from './Cap017/example01/rxjs01/rxjs01.component';
+import { Rxjs02Component } from './Cap017/example02/rxjs02/rxjs02.component';
+import { Rxjs03Component } from './Cap017/example03/rxjs03/rxjs03.component';
+import { Rxjs05Component } from './Cap017/example05/rxjs05/rxjs05.component';
+import { Rxjs07Component } from './Cap017/example07/rxjs07/rxjs07.component';
+import { Rxjs08Component } from './Cap017/example08/rxjs08/rxjs08.component';
+import { Rxjs09Component } from './Cap017/example09/rxjs09/rxjs09.component';
+import { Rxjs10Component } from './Cap017/example10/rxjs10/rxjs10.component';
+import { Rxjs11Component } from './Cap017/example11/rxjs11/rxjs11.component';
+import { Rxjs12Component } from './Cap017/example12/rxjs12/rxjs12.component';
+import { Rxjs13Component } from './Cap017/example13/rxjs13/rxjs13.component';
 
 
 
@@ -245,6 +256,17 @@ const routes: Routes = [
   { path: 'homerxjs04', component: Homerxjs04Component },
   { path: 'homerxjs05', component: Homerxjs05Component },
 
+  // Cap 17 - RxJs Operators
+  { path: 'operOf', component: Rxjs01Component },
+  { path: 'operfrom', component: Rxjs02Component },
+  { path: 'operInterval', component: Rxjs03Component },
+  { path: 'operSpinner', component: Rxjs05Component },
+  { path: 'operPipe', component: Rxjs07Component },
+  { path: 'operMap', component: Rxjs09Component },
+  { path: 'mergeMap', component: Rxjs10Component },
+  { path: 'mergeMapAss', component: Rxjs11Component },
+  { path: 'concatMap', component: Rxjs12Component },
+  { path: 'switchMap', component: Rxjs13Component },
 ];
 
 @NgModule({
