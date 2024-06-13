@@ -15,6 +15,6 @@ export class Rxjs09Component implements OnInit {
         map((result) => ({ x: result.clientX, y: result.clientY }))
       );
 
-    this.cursorPoint$.subscribe(result => console.log(`X: ${result.x} Y: ${result.y}`));
+    this.cursorPoint$.subscribe();
   }
 }
