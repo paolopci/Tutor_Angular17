@@ -143,6 +143,11 @@ import { HttpClient02Component } from './Cap18/example02/http-client02/http-clie
 import { HttpClient03Component } from './Cap18/example03/http-client03/http-client03.component';
 import { HttpClient04Component } from './Cap18/example04/http-client04/http-client04.component';
 import { HttpClient05Component } from './Cap18/example05/http-client05/http-client05.component';
+import { ProductsModule } from './Cap18/example06/products/products.module';
+import { App06Component } from './Cap18/example06/app06.component';
+import { ProductService } from './Cap18/example06/services/product.service';
+import { AppNavbar06Component } from './Cap18/example06/app-navbar06/app-navbar06.component'; // crud example06
+
 
 
 
@@ -283,6 +288,8 @@ export function showGreetingMessage(): string {
     HttpClient03Component,
     HttpClient04Component,
     HttpClient05Component,
+    App06Component,
+    AppNavbar06Component
   ],
   imports: [
     BrowserModule,
@@ -291,7 +298,8 @@ export function showGreetingMessage(): string {
     AdminModule,  // import il routing module che ho creato per forChild
     FormsCap11Module,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ProductsModule,
   ],
   providers: [
     // provideClientHydration(),
@@ -337,9 +345,9 @@ export function showGreetingMessage(): string {
     {
       provide: 'GREETING_MESSAGE_VALUE', // my Token in useValue
       useValue: 'Ciaooooooo'  // useValue ritorna un valore statico.
-    }
-
-
+    },
+    //cap 18 example 06 crud
+    ProductService
   ],
   bootstrap: [AppComponent]
 })
