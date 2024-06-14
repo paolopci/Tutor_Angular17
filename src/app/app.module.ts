@@ -141,6 +141,8 @@ import { HttpClient01Component } from './Cap18/example01/http-client01/http-clie
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClient02Component } from './Cap18/example02/http-client02/http-client02.component';
 import { HttpClient03Component } from './Cap18/example03/http-client03/http-client03.component';
+import { HttpClient04Component } from './Cap18/example04/http-client04/http-client04.component';
+import { HttpClient05Component } from './Cap18/example05/http-client05/http-client05.component';
 
 
 
@@ -279,6 +281,8 @@ export function showGreetingMessage(): string {
     HttpClient01Component,
     HttpClient02Component,
     HttpClient03Component,
+    HttpClient04Component,
+    HttpClient05Component,
   ],
   imports: [
     BrowserModule,
