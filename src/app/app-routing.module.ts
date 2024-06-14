@@ -115,6 +115,7 @@ import { HttpClient01Component } from './Cap18/example01/http-client01/http-clie
 import { HttpClient02Component } from './Cap18/example02/http-client02/http-client02.component';
 import { HttpClient03Component } from './Cap18/example03/http-client03/http-client03.component';
 import { HttpClient04Component } from './Cap18/example04/http-client04/http-client04.component';
+import { HttpClient05Component } from './Cap18/example05/http-client05/http-client05.component';
 
 
 
@@ -277,6 +278,7 @@ const routes: Routes = [
   { path: 'httpClient02', component: HttpClient02Component },// get observable
   { path: 'httpClient03', component: HttpClient03Component },// post
   { path: 'httpClient04', component: HttpClient04Component },// put
+  { path: 'httpClient05', component: HttpClient05Component },// delete
 ];
 
 @NgModule({
